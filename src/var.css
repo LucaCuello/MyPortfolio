@@ -1,16 +1,16 @@
 :root {
-    /* Dark Palette */
-    --dark-main: #1F1D2E;
-    --ligth-main: #EBBCBA;
-    --clear-ligth: #ebbcba9f;
-    --accent: #31748F;
-    --accent-dark: #28485f;
-    --accent-ligth: #468097;
-    --clear-white: #ffffff94;
-    /* Typo */
-    --main-heading: 40px;
-    --sub-heading: 25px;
-    --medium: 20px;
-    --normal: 16px;
-    --small: 14px;
+  /* Dark Palette */
+  --dark-main: #1f1d2e;
+  --ligth-main: #ebbcba;
+  --clear-ligth: #ebbcba9f;
+  --accent: #31748f;
+  --accent-dark: #28485f;
+  --accent-ligth: #468097;
+  --clear-white: #ffffff94;
+  /* Typo */
+  --main-heading: 40px;
+  --sub-heading: 25px;
+  --medium: 20px;
+  --normal: 16px;
+  --small: 14px;
 }

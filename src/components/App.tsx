@@ -6,7 +6,7 @@ import { ProfilePicture } from "./profilePicture/ProfilePicture";
 import { Footer } from "./footer/Footer";
 import { Education } from "./views/education/Education";
 import { Projects } from "./views/projects/Projects";
-import { ContactMe } from "./views/contactMe/ContactMe";
+import { Skills } from "./views/skills/Skills";
 
 export const App = () => {
   return (
@@ -23,8 +23,8 @@ export const App = () => {
           }
         />
         <Route path="/education" element={<Education />} />
+        <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<ContactMe />} />
       </Routes>
       <Footer />
     </>
