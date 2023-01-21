@@ -1,0 +1,52 @@
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.item-list {
+    cursor: pointer;
+    position: relative;
+}
+
+.item-link {
+    color: var(--ligth-main);
+    font-size: var(--normal);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 150ms ease-in-out;
+
+}
+
+
+.item-list::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    height: 2px;
+    width: 40%;
+    background-color: var(--accent-ligth);
+    transition: all 200ms ease;
+
+}
+
+.item-link:hover {
+    color: var(--accent-ligth);
+    transition: all 150ms ease-in-out;
+}
+
+.item-list:hover::before {
+    background-color: var(--clear-ligth);
+    width: 100%;
+    transition: all 200ms ease;
+}
+
+.active {
+    color: var(--accent-ligth);
+}

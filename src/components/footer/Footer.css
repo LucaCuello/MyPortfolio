@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    border-top: 1px solid #ec9a9a56;
+    padding-top: 25px;
+    color: var(--accent);
+    font-size: var(--small);
+    font-weight: 400;
+}
+
+.made-with {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 70px;
+
+}
+
+.made-with span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: var(--clear-ligth);
+    align-self: center;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--clear-ligth);
+}
