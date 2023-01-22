@@ -10,12 +10,4 @@
   font-weight: 800;
   padding: 15px;
   border-radius: 10px;
-  opacity: 0.9;
-  transition: all 400ms ease-out;
-}
-
-.skills-card:hover {
-  transform: scale(1.09);
-  opacity: 1;
-  transition: all 100ms ease-in;
 }

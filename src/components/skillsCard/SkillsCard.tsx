@@ -1,4 +1,6 @@
 import "./SkillsCard.css";
+import { motion, AnimatePresence } from "framer-motion";
+
 export const SkillsCard = ({
   icon,
   name,
@@ -18,9 +20,19 @@ export const SkillsCard = ({
     color: `${textColor ? textColor : null}`,
   };
   return (
-    <div className="skills-card" style={colorStyles}>
-      {icon}
-      <span>{name}</span>
-    </div>
+    <AnimatePresence>
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 0.9 }}
+        exit={{ scale: 0 }}
+        whileHover={{ scale: 1.1, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="skills-card"
+        style={colorStyles}
+      >
+        {icon}
+        <span>{name}</span>
+      </motion.div>
+    </AnimatePresence>
   );
 };

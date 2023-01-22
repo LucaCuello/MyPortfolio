@@ -25,7 +25,7 @@ html * {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 120px;
+  gap: 80px;
   width: 1000px;
   max-width: 1000px;
   margin: 0 20px;
