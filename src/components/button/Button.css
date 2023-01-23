@@ -10,10 +10,13 @@
   border-radius: 5px;
   font-weight: 600;
   background-color: var(--accent);
-  color: var(--dark-main);
   font-size: var(--normal);
   text-transform: uppercase;
   transition: all 400ms ease-in-out;
+}
+
+#comp-button a {
+  color: var(--dark-main);
 }
 
 #comp-button:hover {

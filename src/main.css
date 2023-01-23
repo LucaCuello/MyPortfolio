@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(var.css);
+@import url(responsive.css);
 
 *,
 *::before,
@@ -26,12 +27,15 @@ html * {
   align-items: flex-start;
   flex-direction: column;
   gap: 80px;
+  min-width: 280px;
   width: 1000px;
   max-width: 1000px;
   margin: 0 20px;
   padding: 30px 15px;
+  overflow-x: hidden;
   /* border: 1px solid var(--ligth-main); */
-  min-height: 100vh;
+  /* height: auto; */
+  /* min-height: 100vh; */
 }
 
 a {

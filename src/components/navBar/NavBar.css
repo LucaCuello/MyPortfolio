@@ -1,8 +1,65 @@
-nav {
+.hamburguer-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.hamburguer-container div {
+  pointer-events: none;
+  width: 80%;
+  height: 3px;
+  background-color: var(--accent);
+  transition: all 300ms ease;
+}
+
+.hamburguer-active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer-active div:nth-child(1) {
+  transform: rotate(-45deg) translateX(-10px);
+}
+
+.hamburguer-active div:nth-child(3) {
+  transform: rotate(45deg) translateX(-10px);
+}
+
+.hamburguer-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--dark-main);
+  border: 2px solid var(--clear-ligth);
+  padding: 60px 20px 60px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: calc(100% - 100px);
+  z-index: 2;
+  transform: translateX(-100vw);
+  transition: all 200ms ease-in-out;
+}
+
+.hamburguer-menu .un-list {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  text-align: left;
+}
+
+.hamburguer-menu-shown {
+  transform: translateX(0);
+}
+
+header {
   width: 100%;
 }
 
-ul {
+.un-list {
   display: flex;
   justify-content: space-between;
   align-items: center;

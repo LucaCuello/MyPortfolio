@@ -1,6 +1,6 @@
 import "./ProjectsCard.css";
 import { GrDeploy, GrGithub } from "react-icons/gr";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 export const ProjectsCard = ({
   title,
   description,
@@ -19,41 +19,41 @@ export const ProjectsCard = ({
   repository: string;
 }) => {
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -50 }}
-        transition={{ duration: animationDelay, ease: "anticipate" }}
-        className="project"
-      >
-        <img
-          className="project-preview"
-          src={imagePath}
-          draggable="false"
-          alt="Image preview of a project"
-        ></img>
-        <div className="project-description">
-          <h3 className="card-subheading">{title}</h3>
-          <p>{description}</p>
-          <span className="techs-used">{icons}</span>
-          <div className="go-to">
-            <button>
-              <GrDeploy />
-              <a href={deploy} target="_blank">
-                Deploy
-              </a>
-            </button>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: animationDelay, ease: "easeIn" }}
+      className="project"
+    >
+      <motion.img
+        initial={{ scale: 0 }}
+        animate={{ scale: [0.8, 1.3, 1] }}
+        transition={{ duration: 0.3, ease: "linear" }}
+        className="project-preview"
+        src={imagePath}
+        draggable="false"
+        alt="Image preview of a project"
+      ></motion.img>
+      <div className="project-description">
+        <h3 className="card-subheading">{title}</h3>
+        <p>{description}</p>
+        <span className="techs-used">{icons}</span>
+        <div className="go-to">
+          <button>
+            <GrDeploy />
+            <a href={deploy} target="_blank">
+              Deploy
+            </a>
+          </button>
 
-            <button>
-              <GrGithub />
-              <a href={repository} target="_blank">
-                Repository
-              </a>
-            </button>
-          </div>
+          <button>
+            <GrGithub />
+            <a href={repository} target="_blank">
+              Repository
+            </a>
+          </button>
         </div>
-      </motion.div>
-    </AnimatePresence>
+      </div>
+    </motion.div>
   );
 };

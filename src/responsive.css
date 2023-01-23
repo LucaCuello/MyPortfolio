@@ -1,0 +1,61 @@
+@media screen and (max-width: 970px) {
+  /* About me responsive */
+
+  #root {
+    gap: 25px !important;
+  }
+
+  .aboutme-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .picture-container {
+    order: -1;
+    transform: scale(0.8) !important;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutme-body {
+    text-align: center;
+    word-wrap: break-word;
+    width: 85%;
+  }
+
+  /* Footer responsive */
+
+  .contact-me {
+    gap: 20px;
+  }
+
+  .made-with {
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+  }
+
+  .contact-me,
+  .made-with {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* Hamburguer menu */
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburguer-container,
+  .hamburguer-menu {
+    display: flex;
+  }
+}

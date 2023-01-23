@@ -6,6 +6,12 @@
   border-radius: 20px;
   width: 100%;
   padding: 20px;
+  transition: all 200ms ease;
+}
+
+.project:hover {
+  border: 1px solid var(--accent);
+  transition: all 200ms ease;
 }
 
 .project-preview {

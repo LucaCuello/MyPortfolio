@@ -1,4 +1,7 @@
 .aboutme-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   color: var(--clear-white);
   font-size: var(--normal);
   text-align: left;
