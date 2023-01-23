@@ -14,7 +14,7 @@
 
   .picture-container {
     order: -1;
-    transform: scale(0.8) !important;
+    transform: scale(0.7) !important;
   }
 
   .about-me {
@@ -28,6 +28,24 @@
     text-align: center;
     word-wrap: break-word;
     width: 85%;
+  }
+
+  /* Education responsive */
+
+  .education-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .study-card {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .study-card p {
+    width: 80%;
+    word-wrap: break-word;
   }
 
   /* Footer responsive */
@@ -57,5 +75,20 @@
   .hamburguer-container,
   .hamburguer-menu {
     display: flex;
+  }
+
+  /* Education responsive */
+
+  .cards-container {
+    overflow: auto;
+    padding: 0;
+  }
+
+  .education-container {
+    height: auto;
+  }
+
+  .education-container h1 {
+    text-align: center;
   }
 }
