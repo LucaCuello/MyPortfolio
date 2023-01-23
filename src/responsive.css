@@ -64,6 +64,42 @@
   .made-with {
     text-align: center;
   }
+
+  /* Skills responsive */
+
+  .skills-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .skills-card-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .programming-languages,
+  .front-end,
+  .graphic-design,
+  .other-tools {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .languages,
+  .front-end-frameworks,
+  .design,
+  .tools {
+    justify-content: center;
+    align-items: center;
+    column-gap: 55px;
+  }
+
+  .skills-card {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -90,5 +126,18 @@
 
   .education-container h1 {
     text-align: center;
+  }
+
+  /* Skills responsive */
+
+  .skills-card {
+    box-shadow: none !important;
+  }
+
+  .languages,
+  .front-end-frameworks,
+  .design,
+  .tools {
+    column-gap: 10px;
   }
 }
