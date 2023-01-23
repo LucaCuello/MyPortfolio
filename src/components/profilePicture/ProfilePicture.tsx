@@ -6,7 +6,7 @@ export const ProfilePicture = () => {
     <motion.div
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.4 }}
       className="picture-container"
     >
       <img src={avatar} alt="avatar" draggable="false"></img>

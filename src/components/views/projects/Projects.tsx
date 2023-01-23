@@ -47,7 +47,7 @@ export const Projects = () => {
           imagePath={PortfolioPrwview}
           animationDelay={0.8}
           repository="https://github.com/LucaCuello/MyPortfolio"
-          deploy="#"
+          deploy="https://lucacuello.vercel.app/"
         />
       </div>
     </motion.div>

@@ -7,7 +7,7 @@ export const AboutMe = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeIn" }}
+      transition={{ duration: 0.8, ease: "backInOut" }}
       className="about-me"
     >
       <h1 className="heading">Luca Cuello</h1>
@@ -25,8 +25,8 @@ export const AboutMe = () => {
           also looks great.
         </p>
         <p>
-          I am excited to share my work with you and I look forward to the
-          opportunity to work with you in the future.
+          I am excited to share my projects with you and I look forward to the
+          opportunity to work together.
         </p>
       </main>
     </motion.div>

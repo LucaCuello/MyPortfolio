@@ -1,4 +1,7 @@
 .picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -10,7 +13,7 @@
 }
 
 .picture-container img {
-  width: 100%;
+  width: 195px;
   height: auto;
   transform: translateY(15px) scale(1);
   transition: all 400ms ease;

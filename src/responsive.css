@@ -100,9 +100,20 @@
   .skills-card {
     padding: 10px;
   }
+
+  /* Projects responsive */
+
+  .projects-container {
+    align-items: center;
+  }
+
+  .project-description p {
+    width: 90%;
+    word-wrap: break-word;
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
   /* Hamburguer menu */
   .desktop-menu {
     display: none;
@@ -139,5 +150,40 @@
   .design,
   .tools {
     column-gap: 10px;
+  }
+
+  /* Education responsive */
+
+  .projects-container {
+    overflow: auto;
+    padding: 0;
+    height: auto;
+  }
+
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-description {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 370px) {
+  /* Footer */
+  .contact-me {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-preview {
+    width: 200px;
+  }
+
+  .project-description {
+    gap: 15px;
   }
 }
