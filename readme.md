@@ -7,3 +7,5 @@ This website was built using React and TypeScript to showcase my projects as a f
 [🔸Deploy](https://lucacuello.vercel.app/).
 
 <img src="https://iili.io/Hlvn0zu.png" border="0">
+
+Avatar made by [Franco](https://www.instagram.com/xfrvnx/).
