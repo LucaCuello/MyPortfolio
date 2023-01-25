@@ -24,6 +24,7 @@ export const ProjectsCard = ({
       animate={{ opacity: 1 }}
       transition={{ duration: animationDelay, ease: "easeIn" }}
       className="project"
+      key={crypto.randomUUID()}
     >
       <motion.img
         initial={{ scale: 0 }}
