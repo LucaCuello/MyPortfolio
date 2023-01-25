@@ -19,6 +19,7 @@ export const educationData = [
     certificateLink:
       "https://drive.google.com/drive/folders/1Q3jdoTjvxFUxurIFz8NVk4PHl7YcLIPS?usp:share_link",
   },
+
   {
     title: "Novit Academy",
     courseType: "Crash-Course",
@@ -27,6 +28,16 @@ export const educationData = [
     place: "Novit",
     date: "01/2023 - Current",
     certificateLink: "#",
+  },
+  {
+    title: "EFSET",
+    courseType: "English Certificate",
+    description:
+      "English test where I've got the calcification of 74/100 (C2 Proficient).",
+    place: "Efset",
+    date: "Completed",
+    certificateLink:
+      "https://drive.google.com/drive/folders/1HX4tjd3_L6BXbUHmMD4_wThXTN6voJoF?usp=share_link",
   },
   {
     title: "It Support",
