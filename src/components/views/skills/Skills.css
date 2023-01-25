@@ -37,7 +37,7 @@
 .tools,
 .design {
   display: flex;
-  column-gap: 55px;
+  column-gap: 25px;
   row-gap: 10px;
   flex-wrap: wrap;
 }

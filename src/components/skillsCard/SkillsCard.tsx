@@ -14,7 +14,7 @@ export const SkillsCard = ({
 }) => {
   let colorStyles = {
     backgroundColor: `${mainColor}`,
-    boxShadow: `40px 0px ${ligthColor}`,
+    boxShadow: `15px 0px ${ligthColor}`,
   };
   return (
     <motion.div

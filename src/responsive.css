@@ -94,7 +94,7 @@
   .tools {
     justify-content: center;
     align-items: center;
-    column-gap: 55px;
+    column-gap: 25px;
   }
 
   .skills-card {
