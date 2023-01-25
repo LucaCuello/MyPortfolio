@@ -20,7 +20,7 @@ export const SkillsCard = ({
     <motion.div
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 0.9 }}
-      whileHover={{ scale: 1.1, opacity: 1 }}
+      whileHover={{ scale: 1.07, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="skills-card"
       style={colorStyles}
