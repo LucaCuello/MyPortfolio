@@ -33,7 +33,7 @@ export const educationData = [
     title: "EFSET",
     courseType: "English Certificate",
     description:
-      "English test where I've got the calcification of 74/100 (C2 Proficient).",
+      "English test where I've got the qualification of 74/100 (C2 Proficient).",
     place: "Efset",
     date: "Completed",
     certificateLink:
