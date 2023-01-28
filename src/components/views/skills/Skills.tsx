@@ -23,7 +23,7 @@ export const Skills = () => {
           <h2 className="category-heading">Programming languages</h2>
           <div className="languages">
             {programmingLanguagesData.map((props) => (
-              <SkillsCard {...props} />
+              <SkillsCard {...props} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>
@@ -31,7 +31,7 @@ export const Skills = () => {
           <h2 className="category-heading">Front-end</h2>
           <div className="front-end-frameworks">
             {frontEndData.map((props) => (
-              <SkillsCard {...props} />
+              <SkillsCard {...props} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>
@@ -40,7 +40,7 @@ export const Skills = () => {
           <h2 className="category-heading">Design</h2>
           <div className="design">
             {designData.map((props) => (
-              <SkillsCard {...props} />
+              <SkillsCard {...props} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>
@@ -49,7 +49,7 @@ export const Skills = () => {
           <h2 className="category-heading">Other tools</h2>
           <div className="tools">
             {toolsData.map((props) => (
-              <SkillsCard {...props} />
+              <SkillsCard {...props} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>

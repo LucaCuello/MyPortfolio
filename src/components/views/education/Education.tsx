@@ -13,7 +13,7 @@ export const Education = () => {
       <h1 className="heading">My education</h1>
       <div className="cards-container">
         {educationData.map((props) => (
-          <StudyCard {...props} />
+          <StudyCard {...props} key={crypto.randomUUID()} />
         ))}
       </div>
     </motion.div>

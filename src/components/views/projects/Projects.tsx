@@ -14,7 +14,7 @@ export const Projects = () => {
       <h1 className="heading">My projects</h1>
       <div className="projects-container">
         {projectsData.map((props) => (
-          <ProjectsCard {...props} />
+          <ProjectsCard {...props} key={crypto.randomUUID()} />
         ))}
       </div>
     </motion.div>
