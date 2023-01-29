@@ -1,6 +1,6 @@
 import { GrCertificate } from "react-icons/gr";
 
-export const StudyCardButton = ({
+export const EducationCardButton = ({
   certificateLink,
 }: {
   certificateLink: string;

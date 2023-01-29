@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import { StudyCard } from "../../studyCard/StudyCard";
+import { EducationCard } from "../../educationCard/EducationCard";
 import { educationData } from "./Data";
 import "./Education.css";
 
@@ -26,7 +26,7 @@ export const Education = () => {
         <h1 className="heading">My education</h1>
         <div className="cards-container">
           {slicedArray.map((props) => (
-            <StudyCard {...props} key={crypto.randomUUID()} />
+            <EducationCard {...props} key={crypto.randomUUID()} />
           ))}
         </div>
         <div className="controllers">

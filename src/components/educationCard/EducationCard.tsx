@@ -1,7 +1,7 @@
-import "./StudyCard.css";
-import { StudyCardButton } from "./studyCardButton/StudyCardButton";
 import { motion } from "framer-motion";
-export const StudyCard = ({
+import "./EducationCard.css";
+import { EducationCardButton } from "./educationCardButton/EducationCardButton";
+export const EducationCard = ({
   title,
   courseType,
   description,
@@ -32,7 +32,7 @@ export const StudyCard = ({
         </span>
       </div>
       <p className="card-description">{description}</p>
-      <StudyCardButton certificateLink={certificateLink} />
+      <EducationCardButton certificateLink={certificateLink} />
     </motion.div>
   );
 };
