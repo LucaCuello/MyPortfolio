@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+import { useState } from "react";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { StudyCard } from "../../studyCard/StudyCard";
 import { educationData } from "./Data";
 import "./Education.css";
