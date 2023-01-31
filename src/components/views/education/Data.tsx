@@ -21,12 +21,12 @@ export const educationData = [
   },
 
   {
-    title: "Novit Academy",
-    courseType: "Crash-Course",
+    title: "UX/UI Open",
+    courseType: "Bootcamp",
     description:
-      "In this Crash Course I'm currently learning a new Front-End framework; Angular. I'm also Learning .NET and C#.",
-    place: "Novit",
-    date: "01/2023 - Current",
+      "Bootcamp that I'm taking to improve my design skills. The bootcamp itself covers a range of topics such as reasearch, prototyping, visual design and front-end development.",
+    place: "The Open Bootcamp",
+    date: "02/2023 - Current",
     certificateLink: "#",
   },
   {
