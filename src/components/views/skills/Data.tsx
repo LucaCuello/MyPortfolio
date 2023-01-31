@@ -1,22 +1,22 @@
-import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
-import {
-  SiTypescript,
-  SiMaterialui,
-  SiChakraui,
-  SiStyledcomponents,
-  SiSass,
-  SiTailwindcss,
-  SiCanva,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
-  SiFigma,
-  SiDotnet,
-  SiCsharp,
-  SiNpm,
-} from "react-icons/si";
+import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
+import { DiCss3, DiNodejsSmall } from "react-icons/di";
+import { FaAngular, FaBootstrap, FaGitAlt, FaJava, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaGitAlt, FaReact, FaAngular, FaJava, FaBootstrap } from "react-icons/fa";
-import { DiNodejsSmall, DiCss3 } from "react-icons/di";
+import {
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiCanva,
+  SiChakraui,
+  SiCsharp,
+  SiDotnet,
+  SiFigma,
+  SiMaterialui,
+  SiNpm,
+  SiSass,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 export const programmingLanguagesData = [
   {
@@ -46,22 +46,10 @@ export const programmingLanguagesData = [
     ligthColor: "#28485f",
   },
   {
-    icon: [<SiDotnet style={{ color: "#468097" }} key={crypto.randomUUID()} />],
-    name: ".NET",
-    mainColor: "#EBBCBA",
-    ligthColor: "#ebbcba9f",
-  },
-  {
     icon: [<FaJava style={{ color: "#EBBCBA" }} key={crypto.randomUUID()} />],
     name: "Java",
     mainColor: "#468097",
     ligthColor: "#28485f",
-  },
-  {
-    icon: [<SiCsharp style={{ color: "#468097" }} key={crypto.randomUUID()} />],
-    name: "C#",
-    mainColor: "#EBBCBA",
-    ligthColor: "#ebbcba9f",
   },
 ];
 
@@ -161,12 +149,6 @@ export const toolsData = [
     name: "GitHub",
     mainColor: "#468097",
     ligthColor: "#28485f",
-  },
-  {
-    icon: [<DiNodejsSmall style={{ color: "#468097" }} key={crypto.randomUUID()} />],
-    name: "NodeJS",
-    mainColor: "#EBBCBA",
-    ligthColor: "#ebbcba9f",
   },
   {
     icon: [<SiNpm style={{ color: "#EBBCBA" }} key={crypto.randomUUID()} />],
