@@ -1,14 +1,14 @@
-import SpookyShopPreview from "../../../assets/SpookyShop.png";
-import RetroToDoPreview from "../../../assets/RetroToDo.png";
-import PortfolioPrwview from "../../../assets/PortfolioPreview.png";
 import {
-  SiJavascript,
   SiCss3,
   SiHtml5,
+  SiJavascript,
   SiReact,
-  SiVite,
   SiTypescript,
+  SiVite,
 } from "react-icons/si";
+import PortfolioPrwview from "../../assets/PortfolioPreview.png";
+import RetroToDoPreview from "../../assets/RetroToDo.png";
+import SpookyShopPreview from "../../assets/SpookyShop.png";
 
 export const projectsData = [
   {

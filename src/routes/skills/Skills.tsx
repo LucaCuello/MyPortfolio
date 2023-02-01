@@ -1,11 +1,11 @@
-import { SkillsCard } from "../../skillsCard/SkillsCard";
-import "./Skills.css";
 import { motion } from "framer-motion";
+import { SkillsCard } from "../../components/skillsCard/SkillsCard";
+import "./Skills.css";
 
 import {
-  programmingLanguagesData,
-  frontEndData,
   designData,
+  frontEndData,
+  programmingLanguagesData,
   toolsData,
 } from "./Data";
 

@@ -1,5 +1,5 @@
-import { Button } from "../../button/Button";
 import { motion } from "framer-motion";
+import { Button } from "../../components/button/Button";
 import "./AboutMe.css";
 
 export const AboutMe = () => {

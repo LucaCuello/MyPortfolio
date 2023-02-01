@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import { EducationCard } from "../../educationCard/EducationCard";
+import { EducationCard } from "../../components/educationCard/EducationCard";
 import { educationData } from "./Data";
 import "./Education.css";
 

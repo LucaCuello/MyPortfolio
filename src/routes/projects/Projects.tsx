@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import { ProjectsCard } from "../../projectsCard/ProjectsCard";
+import { ProjectsCard } from "../../components/projectsCard/ProjectsCard";
 import { projectsData } from "./Data";
 import "./Projects.css";
 
