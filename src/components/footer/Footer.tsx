@@ -1,8 +1,6 @@
-import "./Footer.css";
-import { FaReact } from "react-icons/fa";
 import { AiOutlineHeart } from "react-icons/ai";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaReact } from "react-icons/fa";
+import "./Footer.css";
 export const Footer = () => {
   return (
     <footer>
@@ -26,16 +24,6 @@ export const Footer = () => {
             <FaGithubSquare />
             Follow me
           </a>
-        </span>
-      </div>
-      <div className="made-with">
-        <span>
-          <FaReact />
-          Made with React.
-        </span>
-        <span>
-          <AiOutlineHeart />
-          And with Love!
         </span>
       </div>
     </footer>
