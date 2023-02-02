@@ -10,7 +10,7 @@
 }
 
 .project:hover {
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-ligth);
   transition: all 200ms ease;
 }
 

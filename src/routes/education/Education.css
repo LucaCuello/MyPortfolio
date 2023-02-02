@@ -26,14 +26,14 @@
   border: none;
   border-radius: 5px;
   padding: 5px;
-  background-color: var(--accent-ligth);
+  background-color: var(--accent);
   color: var(--dark-main);
   font-size: var(--medium);
   transition: all 150ms ease-in;
 }
 
 .controllers button:hover {
-  background-color: var(--accent-dark);
+  background-color: var(--accent-ligth);
   transition: all 150ms ease-in;
 }
 

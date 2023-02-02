@@ -80,7 +80,7 @@ header {
   transition: all 150ms ease-in-out;
 }
 
-.item-list::before {
+.item-link::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -95,12 +95,20 @@ header {
   transition: all 150ms ease-in-out;
 }
 
-.item-list:hover::before {
-  background-color: var(--clear-ligth);
+.item-link:hover::before {
+  background-color: var(--ligth-main);
   width: 100%;
   transition: all 200ms ease;
 }
 
 .active {
   color: var(--accent-ligth);
+}
+
+.active::before {
+  width: 100%;
+}
+
+.active:hover::before {
+  background-color: var(--accent-ligth);
 }

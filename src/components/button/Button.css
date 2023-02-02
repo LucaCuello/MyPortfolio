@@ -9,10 +9,11 @@
   padding: 5px 20px;
   border-radius: 5px;
   font-weight: 600;
-  background-color: var(--accent);
+  background-color: var(--accent-ligth);
   font-size: var(--normal);
   text-transform: uppercase;
   transition: all 400ms ease-in-out;
+  color: var(--dark-main);
 }
 
 #comp-button a {
@@ -20,8 +21,7 @@
 }
 
 #comp-button:hover {
-  background-color: var(--accent-ligth);
-  box-shadow: 10px 5px var(--ligth-main);
+  box-shadow: 10px 5px var(--accent);
   transition: all 400ms ease-in-out;
   transform: scale(1.02);
 }

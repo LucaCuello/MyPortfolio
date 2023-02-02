@@ -10,7 +10,7 @@
 }
 
 .study-card:hover {
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-ligth);
   transition: all 200ms ease;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .card-subheading {
-  color: var(--accent);
+  color: var(--accent-ligth);
   font-size: var(--sub-heading);
   font-weight: 700;
 }
@@ -54,7 +54,7 @@
 }
 
 .certificate-button:hover {
-  box-shadow: 5px 5px var(--accent);
+  box-shadow: 5px 5px var(--clear-ligth);
   transition: all 200ms ease;
   transform: scale(1.03);
 }
