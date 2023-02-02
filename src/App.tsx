@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import { AboutMeContainer } from "../components/aboutMeContainer/AboutMeContainer";
-import { Footer } from "../components/footer/Footer";
-import { NavBar } from "../components/navBar/NavBar";
-import { ProfilePicture } from "../components/profilePicture/ProfilePicture";
-import { AboutMe } from "./aboutMe/AboutMe";
-import { Education } from "./education/Education";
-import { Projects } from "./projects/Projects";
-import { Skills } from "./skills/Skills";
+import { AboutMeContainer } from "./components/aboutMeContainer/AboutMeContainer";
+import { Footer } from "./components/footer/Footer";
+import { NavBar } from "./components/navBar/NavBar";
+import { ProfilePicture } from "./components/profilePicture/ProfilePicture";
+import { AboutMe } from "./routes/aboutMe/AboutMe";
+import { Education } from "./routes/education/Education";
+import { Projects } from "./routes/projects/Projects";
+import { Skills } from "./routes/skills/Skills";
 
 export const App = () => {
   return (
