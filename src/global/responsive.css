@@ -165,7 +165,7 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
   /* Footer */
   .contact-me {
     flex-direction: column;
@@ -178,5 +178,9 @@
 
   .project-description {
     gap: 15px;
+  }
+
+  .buttons-container {
+    flex-direction: column;
   }
 }

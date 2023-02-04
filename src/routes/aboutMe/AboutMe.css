@@ -25,3 +25,10 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}

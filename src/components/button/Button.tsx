@@ -1,13 +1,21 @@
 import "./Button.css";
-import CvEn from "../../assets/CVFrontEN.pdf";
-import { CgSoftwareDownload } from "react-icons/cg";
 
-export const Button = ({ content }: { content: string }) => {
+export const Button = ({
+  content,
+  test,
+  icon,
+  download,
+}: {
+  content: string;
+  test: any;
+  icon: any;
+  download: boolean;
+}) => {
   return (
-    <button id="comp-button">
-      <CgSoftwareDownload className="icon" />
+    <button className="comp-button">
+      {icon}
 
-      <a href={CvEn} download>
+      <a href={test} download={download}>
         {content}
       </a>
     </button>
