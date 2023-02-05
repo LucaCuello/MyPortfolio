@@ -1,21 +1,17 @@
 import "./Button.css";
 
-export const Button = ({
-  content,
-  test,
-  icon,
-  download,
-}: {
+type ButtonProps = {
   content: string;
-  test: any;
-  icon: any;
+  direction: string;
+  icon: React.ReactNode;
   download: boolean;
-}) => {
+};
+
+export const Button = ({ content, direction, icon, download }: ButtonProps) => {
   return (
     <button className="comp-button">
       {icon}
-
-      <a href={test} download={download}>
+      <a href={direction} download={download}>
         {content}
       </a>
     </button>

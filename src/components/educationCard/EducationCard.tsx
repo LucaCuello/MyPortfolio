@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
 import "./EducationCard.css";
 import { EducationCardButton } from "./educationCardButton/EducationCardButton";
+
+type CardProps = {
+  title: string;
+  courseType: string;
+  description: string;
+  place: string;
+  date: string;
+  certificateLink: string;
+};
+
 export const EducationCard = ({
   title,
   courseType,
@@ -8,14 +18,7 @@ export const EducationCard = ({
   place,
   date,
   certificateLink,
-}: {
-  title: string;
-  courseType: string;
-  description: string;
-  place: string;
-  date: string;
-  certificateLink: string;
-}) => {
+}: CardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

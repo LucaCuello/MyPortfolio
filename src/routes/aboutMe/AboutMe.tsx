@@ -17,13 +17,13 @@ export const AboutMe = () => {
       <div className="buttons-container">
         <Button
           content="Get Resume"
-          test={CvEn}
+          direction={CvEn}
           icon={<AiOutlineDownload />}
           download={true}
         ></Button>
         <Button
           content="Contact me"
-          test="mailto:lucagcuello@gmail.com"
+          direction="mailto:lucagcuello@gmail.com"
           icon={<AiOutlineMail />}
           download={false}
         ></Button>

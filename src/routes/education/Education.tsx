@@ -7,7 +7,6 @@ import "./Education.css";
 
 export const Education = () => {
   const [currentPage, setCurrentPage] = useState(1);
-
   const cardsPerPage = 2;
   const totalPages = Math.ceil(educationData.length / cardsPerPage);
   const lasIndex = currentPage * cardsPerPage;

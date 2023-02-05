@@ -1,6 +1,7 @@
-import "./ProfilePicture.css";
-import avatar from "../../assets/avatartransparent.png";
 import { motion } from "framer-motion";
+import avatar from "../../assets/avatartransparent.png";
+import "./ProfilePicture.css";
+
 export const ProfilePicture = () => {
   return (
     <motion.div

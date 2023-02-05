@@ -1,6 +1,6 @@
-import { AiOutlineHeart } from "react-icons/ai";
-import { FaGithubSquare, FaLinkedin, FaReact } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import "./Footer.css";
+
 export const Footer = () => {
   return (
     <footer>

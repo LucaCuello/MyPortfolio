@@ -1,12 +1,13 @@
-import "./AboutMeContainer.css";
 import { motion } from "framer-motion";
-export const AboutMeContainer = ({
-  body,
-  profilePicture,
-}: {
-  body: any;
-  profilePicture: any;
-}) => {
+import React from "react";
+import "./AboutMeContainer.css";
+
+type AboutMeProps = {
+  body: React.ReactNode;
+  profilePicture: React.ReactNode;
+};
+
+export const AboutMeContainer = ({ body, profilePicture }: AboutMeProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -200 }}

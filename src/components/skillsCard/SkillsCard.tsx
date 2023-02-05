@@ -1,17 +1,14 @@
-import "./SkillsCard.css";
 import { motion } from "framer-motion";
+import "./SkillsCard.css";
 
-export const SkillsCard = ({
-  icon,
-  name,
-  mainColor,
-  ligthColor,
-}: {
-  icon: any;
+type CardProps = {
+  icon: React.ReactNode;
   name: string;
   mainColor: string;
   ligthColor: string;
-}) => {
+};
+
+export const SkillsCard = ({ icon, name, mainColor, ligthColor }: CardProps) => {
   let colorStyles = {
     backgroundColor: `${mainColor}`,
     boxShadow: `15px 0px ${ligthColor}`,

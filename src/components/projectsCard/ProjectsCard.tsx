@@ -1,6 +1,17 @@
-import "./ProjectsCard.css";
-import { GrDeploy, GrGithub } from "react-icons/gr";
 import { motion } from "framer-motion";
+import { GrDeploy, GrGithub } from "react-icons/gr";
+import "./ProjectsCard.css";
+
+type CardProps = {
+  title: string;
+  description: string;
+  icons: React.ReactNode;
+  imagePath: string;
+  animationDelay: number;
+  deploy: string;
+  repository: string;
+};
+
 export const ProjectsCard = ({
   title,
   description,
@@ -9,15 +20,7 @@ export const ProjectsCard = ({
   animationDelay,
   deploy,
   repository,
-}: {
-  title: string;
-  description: string;
-  icons: any;
-  imagePath: string;
-  animationDelay: number;
-  deploy: string;
-  repository: string;
-}) => {
+}: CardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

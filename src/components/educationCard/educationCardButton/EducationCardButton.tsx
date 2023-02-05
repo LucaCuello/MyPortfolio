@@ -1,10 +1,10 @@
 import { GrCertificate } from "react-icons/gr";
 
-export const EducationCardButton = ({
-  certificateLink,
-}: {
+type LinkProp = {
   certificateLink: string;
-}) => {
+};
+
+export const EducationCardButton = ({ certificateLink }: LinkProp) => {
   return (
     <button className="certificate-button">
       <GrCertificate />
