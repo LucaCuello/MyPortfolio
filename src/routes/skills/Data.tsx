@@ -1,17 +1,21 @@
-import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
-import { DiCss3, DiNodejsSmall } from "react-icons/di";
-import { FaAngular, FaBootstrap, FaGitAlt, FaJava, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
 import {
   SiAdobeillustrator,
   SiAdobephotoshop,
+  SiAngular,
+  SiBootstrap,
   SiCanva,
   SiChakraui,
-  SiCsharp,
-  SiDotnet,
+  SiCss3,
   SiFigma,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiJava,
+  SiJavascript,
   SiMaterialui,
+  SiNotion,
   SiNpm,
+  SiReact,
   SiSass,
   SiStyledcomponents,
   SiTailwindcss,
@@ -20,19 +24,19 @@ import {
 
 export const programmingLanguagesData = [
   {
-    icon: [<AiFillHtml5 key={crypto.randomUUID()} />],
+    icon: [<SiHtml5 key={crypto.randomUUID()} />],
     name: "HTML",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
   },
   {
-    icon: [<DiCss3 key={crypto.randomUUID()} />],
+    icon: [<SiCss3 key={crypto.randomUUID()} />],
     name: "CSS",
     mainColor: "var(--accent-ligth)",
     ligthColor: "var(--accent)",
   },
   {
-    icon: [<IoLogoJavascript key={crypto.randomUUID()} />],
+    icon: [<SiJavascript key={crypto.randomUUID()} />],
     name: "JavaScript",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
@@ -44,7 +48,7 @@ export const programmingLanguagesData = [
     ligthColor: "var(--accent)",
   },
   {
-    icon: [<FaJava key={crypto.randomUUID()} />],
+    icon: [<SiJava key={crypto.randomUUID()} />],
     name: "Java",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
@@ -53,13 +57,13 @@ export const programmingLanguagesData = [
 
 export const frontEndData = [
   {
-    icon: [<FaReact key={crypto.randomUUID()} />],
+    icon: [<SiReact key={crypto.randomUUID()} />],
     name: "React",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
   },
   {
-    icon: [<FaAngular key={crypto.randomUUID()} />],
+    icon: [<SiAngular key={crypto.randomUUID()} />],
     name: "Angular",
     mainColor: "var(--accent-ligth)",
     ligthColor: "var(--accent)",
@@ -83,7 +87,7 @@ export const frontEndData = [
     ligthColor: "var(--clear-ligth)",
   },
   {
-    icon: [<FaBootstrap key={crypto.randomUUID()} />],
+    icon: [<SiBootstrap key={crypto.randomUUID()} />],
     name: "Bootstrap",
     mainColor: "var(--accent-ligth)",
     ligthColor: "var(--accent)",
@@ -131,13 +135,13 @@ export const designData = [
 
 export const toolsData = [
   {
-    icon: [<FaGitAlt key={crypto.randomUUID()} />],
+    icon: [<SiGit key={crypto.randomUUID()} />],
     name: "Git",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
   },
   {
-    icon: [<AiFillGithub key={crypto.randomUUID()} />],
+    icon: [<SiGithub key={crypto.randomUUID()} />],
     name: "GitHub",
     mainColor: "var(--accent-ligth)",
     ligthColor: "var(--accent)",
@@ -147,5 +151,11 @@ export const toolsData = [
     name: "NPM",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
+  },
+  {
+    icon: [<SiNotion key={crypto.randomUUID()} />],
+    name: "Notion",
+    mainColor: "var(--accent-ligth)",
+    ligthColor: "var(--accent)",
   },
 ];
