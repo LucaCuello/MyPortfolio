@@ -7,6 +7,7 @@ export const educationData = [
     place: "IFTS N° 29",
     date: "01/2023 - Current",
     certificateLink: "#",
+    certificateAvailible: false,
   },
   {
     title: "Oracle Next Education",
@@ -17,6 +18,7 @@ export const educationData = [
     date: "08/2022 - Current",
     certificateLink:
       "https://drive.google.com/drive/folders/1Q3jdoTjvxFUxurIFz8NVk4PHl7YcLIPS?usp:share_link",
+    certificateAvailible: true,
   },
 
   {
@@ -27,6 +29,7 @@ export const educationData = [
     place: "The Open Bootcamp",
     date: "02/2023 - Current",
     certificateLink: "#",
+    certificateAvailible: false,
   },
   {
     title: "EFSET",
@@ -37,6 +40,7 @@ export const educationData = [
     date: "Completed",
     certificateLink:
       "https://drive.google.com/drive/folders/1HX4tjd3_L6BXbUHmMD4_wThXTN6voJoF?usp=share_link",
+    certificateAvailible: true,
   },
   {
     title: "It Support",
@@ -47,5 +51,6 @@ export const educationData = [
     date: "09/2022 - Finished",
     certificateLink:
       "https://drive.google.com/drive/folders/1uCCZEuMPd3wcFu_LE0gmpOvRoy0ZVPMJ?usp:share_link",
+    certificateAvailible: true,
   },
 ];

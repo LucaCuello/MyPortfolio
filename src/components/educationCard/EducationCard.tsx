@@ -9,6 +9,7 @@ type CardProps = {
   place: string;
   date: string;
   certificateLink: string;
+  certificateAvailible: boolean;
 };
 
 export const EducationCard = ({
@@ -18,6 +19,7 @@ export const EducationCard = ({
   place,
   date,
   certificateLink,
+  certificateAvailible,
 }: CardProps) => {
   return (
     <motion.div
@@ -35,7 +37,10 @@ export const EducationCard = ({
         </span>
       </div>
       <p className="card-description">{description}</p>
-      <EducationCardButton certificateLink={certificateLink} />
+      <EducationCardButton
+        certificateLink={certificateLink}
+        certificateAvailible={certificateAvailible}
+      />
     </motion.div>
   );
 };

@@ -49,6 +49,20 @@
   transition: all 200ms ease;
 }
 
+.certificate-button:disabled * {
+  cursor: not-allowed;
+}
+
+.certificate-button:disabled {
+  background-color: rgb(148, 147, 147);
+  color: var(--dark-main);
+}
+
+.certificate-button:hover:disabled {
+  box-shadow: none;
+  transform: none;
+}
+
 .certificate-button a {
   color: var(--dark-main);
 }
