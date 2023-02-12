@@ -1,19 +1,18 @@
 export const educationData = [
   {
-    title: "Full-Stack",
-    courseType: "Bootcamp",
+    title: "Software Development",
+    courseType: "Associate Degree",
     description:
-      "Bootcamp that helped me as an introduction to the IT world. Here I've learnt HTML, CSS, JavaScript and I'm currently studying React and some of its most relevant libraries for Front-End.",
-    place: "Nucba",
-    date: "03/2022 - Current",
-    certificateLink:
-      "https://drive.google.com/drive/folders/1iFeavdnn2WD2TZppWqknKlqDruAHm-Jj?usp:share_link",
+      "In this degree I will learn all about software development, I'm personally very excited to continue to especialize and keep learning new things.",
+    place: "IFTS N° 29",
+    date: "01/2023 - Current",
+    certificateLink: "#",
   },
   {
     title: "Oracle Next Education",
     courseType: "Crash-Course",
     description:
-      "Crash-course that helped to understand CSS/JavaScript more and it introduced me to a new programming language, Java.",
+      "Crash-course that helped to understand HTML/CSS/JavaScript more and it introduced me to a new programming language, Java, where I've learnt about Object-Oriented programming.",
     place: "Oracle",
     date: "08/2022 - Current",
     certificateLink:
