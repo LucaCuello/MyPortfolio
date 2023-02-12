@@ -24,18 +24,6 @@ import {
 
 export const programmingLanguagesData = [
   {
-    icon: [<SiHtml5 key={crypto.randomUUID()} />],
-    name: "HTML",
-    mainColor: "var(--ligth-main)",
-    ligthColor: "var(--clear-ligth)",
-  },
-  {
-    icon: [<SiCss3 key={crypto.randomUUID()} />],
-    name: "CSS",
-    mainColor: "var(--accent-ligth)",
-    ligthColor: "var(--accent)",
-  },
-  {
     icon: [<SiJavascript key={crypto.randomUUID()} />],
     name: "JavaScript",
     mainColor: "var(--ligth-main)",
@@ -56,6 +44,18 @@ export const programmingLanguagesData = [
 ];
 
 export const frontEndData = [
+  {
+    icon: [<SiHtml5 key={crypto.randomUUID()} />],
+    name: "HTML",
+    mainColor: "var(--ligth-main)",
+    ligthColor: "var(--clear-ligth)",
+  },
+  {
+    icon: [<SiCss3 key={crypto.randomUUID()} />],
+    name: "CSS",
+    mainColor: "var(--accent-ligth)",
+    ligthColor: "var(--accent)",
+  },
   {
     icon: [<SiReact key={crypto.randomUUID()} />],
     name: "React",
