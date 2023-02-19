@@ -17,6 +17,10 @@ body {
   background-color: var(--dark-main);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html * {
   font-family: "Raleway", sans-serif;
 }
