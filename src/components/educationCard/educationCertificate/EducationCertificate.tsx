@@ -11,18 +11,21 @@ type CertificateProps = {
 export const EducationCertificate = ({ close, image, link }: CertificateProps) => {
   console.log(link);
   return (
-    <div className="certificate-container">
-      <AiOutlineClose
-        className="certificate-close"
-        onClick={() => {
-          close();
-        }}
-      />
-      <img src={image} alt="certificate" draggable={false} />
-      <a href={link} target="_blank" className="certificate-link">
-        <BiLink />
-        Certificate's URL
-      </a>
-    </div>
+    <>
+      <div className="overlay"></div>
+      <div className="certificate-container">
+        <AiOutlineClose
+          className="certificate-close"
+          onClick={() => {
+            close();
+          }}
+        />
+        <img src={image} alt="certificate" draggable={false} />
+        <a href={link} target="_blank" className="certificate-link">
+          <BiLink />
+          Certificate's URL
+        </a>
+      </div>
+    </>
   );
 };

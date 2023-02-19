@@ -1,4 +1,14 @@
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #1f1d2ee8;
+  z-index: 2;
+}
 .certificate-container {
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +37,13 @@
   padding: 5px;
   border-radius: 5px;
   border: 1px solid var(--ligth-main);
+  transition: all 200ms ease;
 }
 
 .certificate-close:hover {
   background-color: var(--ligth-main);
   color: var(--dark-main);
+  transition: all 200ms ease;
 }
 
 .certificate-container img {
@@ -47,4 +59,10 @@
   align-items: center;
   gap: 5px;
   color: var(--ligth-main);
+  transition: all 200ms ease-in-out;
+}
+
+.certificate-link:hover {
+  color: var(--clear-ligth);
+  transition: all 200ms ease-in-out;
 }
