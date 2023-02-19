@@ -6,9 +6,9 @@ import {
   SiTypescript,
   SiVite,
 } from "react-icons/si";
-import PortfolioPrwview from "../../assets/PortfolioPreview.png";
-import RetroToDoPreview from "../../assets/RetroToDo.png";
-import SpookyShopPreview from "../../assets/SpookyShop.png";
+import PortfolioPrwview from "../../assets/previews/PortfolioPreview.png";
+import RetroToDoPreview from "../../assets/previews/RetroToDo.png";
+import SpookyShopPreview from "../../assets/previews/SpookyShop.png";
 
 export const projectsData = [
   {

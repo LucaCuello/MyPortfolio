@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { AiOutlineDownload, AiOutlineMail } from "react-icons/ai";
-import CvEn from "../../assets/CVFrontEN.pdf";
+import CvEn from "../../assets/curriculum/CVFrontEN.pdf";
 import { Button } from "../../components/button/Button";
 import "./AboutMe.css";
 
