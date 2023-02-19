@@ -1,0 +1,50 @@
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  min-width: 280px;
+  max-width: 1000px;
+  padding: 50px 0px 15px 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-main);
+  border: 2px solid var(--ligth-main);
+  border-radius: 15px;
+}
+
+.certificate-close {
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  color: var(--ligth-main);
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--ligth-main);
+}
+
+.certificate-close:hover {
+  background-color: var(--ligth-main);
+  color: var(--dark-main);
+}
+
+.certificate-container img {
+  height: auto;
+  width: 90%;
+  border-radius: inherit;
+  object-fit: fill;
+}
+
+.certificate-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--ligth-main);
+}
