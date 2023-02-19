@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiLink } from "react-icons/bi";
 import "./EducationCertificate.css";
@@ -9,11 +10,23 @@ type CertificateProps = {
 };
 
 export const EducationCertificate = ({ close, image, link }: CertificateProps) => {
-  console.log(link);
   return (
     <>
-      <div className="overlay"></div>
-      <div className="certificate-container">
+      <motion.div
+        key={image}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        className="overlay"
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        className="certificate-container"
+      >
         <AiOutlineClose
           className="certificate-close"
           onClick={() => {
@@ -25,7 +38,7 @@ export const EducationCertificate = ({ close, image, link }: CertificateProps) =
           <BiLink />
           Certificate's URL
         </a>
-      </div>
+      </motion.div>
     </>
   );
 };

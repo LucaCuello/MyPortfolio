@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { GrCertificate } from "react-icons/gr";
 import { TbCertificateOff } from "react-icons/tb";
@@ -32,13 +33,15 @@ export const EducationCardButton = ({
         {certificateAvailible ? <GrCertificate /> : <TbCertificateOff />}
         {certificateAvailible ? "Show certificate" : "In progress"}
       </button>
-      {certificate ? (
-        <EducationCertificate
-          close={closeCertificate}
-          image={certificateImage}
-          link={certificateLink}
-        />
-      ) : null}
+      <AnimatePresence>
+        {certificate ? (
+          <EducationCertificate
+            close={closeCertificate}
+            image={certificateImage}
+            link={certificateLink}
+          />
+        ) : null}
+      </AnimatePresence>
     </>
   );
 };
