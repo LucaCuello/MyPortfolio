@@ -10,6 +10,7 @@ type CertificateProps = {
 };
 
 export const EducationCertificate = ({ close, image, link }: CertificateProps) => {
+  window.scrollTo(0, 0);
   return (
     <>
       <motion.div
