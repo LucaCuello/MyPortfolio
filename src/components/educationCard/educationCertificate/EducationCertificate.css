@@ -35,7 +35,7 @@
 }
 
 .certificate-container img {
-  height: auto;
+  height: 600px;
   width: 90%;
   border-radius: inherit;
   object-fit: fill;
