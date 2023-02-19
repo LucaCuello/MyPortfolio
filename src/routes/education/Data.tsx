@@ -1,3 +1,7 @@
+import EnglishCertificate from "../../assets/certificates/EnglishCertificate.png";
+import ITSupportCertificate from "../../assets/certificates/ITSupportEspecialistCertificate.png";
+import ONECertificate from "../../assets/certificates/ONECertificate.png";
+
 export const educationData = [
   {
     title: "Software Development",
@@ -8,6 +12,7 @@ export const educationData = [
     date: "01/2023 - Current",
     certificateLink: "#",
     certificateAvailible: false,
+    certificateImage: "HOLAHOLAHOLA",
   },
   {
     title: "Oracle Next Education",
@@ -17,8 +22,9 @@ export const educationData = [
     place: "Oracle",
     date: "08/2022 - 02/2023",
     certificateLink:
-      "https://drive.google.com/drive/folders/1Q3jdoTjvxFUxurIFz8NVk4PHl7YcLIPS?usp:share_link",
+      "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
     certificateAvailible: true,
+    certificateImage: ONECertificate,
   },
 
   {
@@ -30,6 +36,7 @@ export const educationData = [
     date: "02/2023 - Current",
     certificateLink: "#",
     certificateAvailible: false,
+    certificateImage: "",
   },
   {
     title: "EFSET",
@@ -38,9 +45,9 @@ export const educationData = [
       "English test where I've got the qualification of 74/100 (C2 Proficient).",
     place: "Efset",
     date: "01/2023",
-    certificateLink:
-      "https://drive.google.com/drive/folders/1HX4tjd3_L6BXbUHmMD4_wThXTN6voJoF?usp=share_link",
+    certificateLink: "https://www.efset.org/cert/NpefMm",
     certificateAvailible: true,
+    certificateImage: EnglishCertificate,
   },
   {
     title: "It Support",
@@ -50,7 +57,8 @@ export const educationData = [
     place: "Coursera, Google",
     date: "09/2022 - 01/2023",
     certificateLink:
-      "https://drive.google.com/drive/folders/1uCCZEuMPd3wcFu_LE0gmpOvRoy0ZVPMJ?usp:share_link",
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/YAPVP7AAUSJF",
     certificateAvailible: true,
+    certificateImage: ITSupportCertificate,
   },
 ];
