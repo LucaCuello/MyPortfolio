@@ -9,6 +9,7 @@ import {
   SiFigma,
   SiGit,
   SiGithub,
+  SiGoogleanalytics,
   SiHtml5,
   SiJava,
   SiJavascript,
@@ -157,5 +158,11 @@ export const toolsData = [
     name: "Notion",
     mainColor: "var(--accent-ligth)",
     ligthColor: "var(--accent)",
+  },
+  {
+    icon: [<SiGoogleanalytics key={crypto.randomUUID()} />],
+    name: "Google Analytics",
+    mainColor: "var(--ligth-main)",
+    ligthColor: "var(--clear-ligth)",
   },
 ];

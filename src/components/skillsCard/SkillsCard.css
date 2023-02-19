@@ -15,4 +15,10 @@
 
 .skills-card svg {
   font-size: var(--medium);
+  transition: all 200ms ease;
+}
+
+.skills-card:hover svg {
+  transform: scale(1.2) rotate(-8deg);
+  transition: all 200ms ease;
 }
