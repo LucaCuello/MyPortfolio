@@ -164,6 +164,17 @@
     align-items: center;
     text-align: center;
   }
+
+  .certificate-container {
+    width: 100%;
+    padding: 55px 0px 15px 0;
+  }
+
+  .certificate-container img {
+    object-fit: contain;
+    width: 95%;
+    height: 100%;
+  }
 }
 @media screen and (max-width: 400px) {
   /* Footer */
