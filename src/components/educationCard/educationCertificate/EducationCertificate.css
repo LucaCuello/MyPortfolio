@@ -66,3 +66,11 @@
   color: var(--clear-ligth);
   transition: all 200ms ease-in-out;
 }
+
+.certificate-skeleton {
+  border-radius: inherit;
+  height: 0;
+  overflow: hidden;
+  padding-top: 60%;
+  position: relative;
+}
