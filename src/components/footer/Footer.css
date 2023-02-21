@@ -33,3 +33,11 @@ footer {
   color: var(--ligth-main);
   transition: color 200ms ease-in;
 }
+
+.update-info {
+  align-self: center;
+}
+
+.update-info p {
+  color: var(--accent-ligth);
+}
