@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { GrDeploy, GrGithub } from "react-icons/gr";
+import { FiGithub } from "react-icons/fi";
+import { GrDeploy } from "react-icons/gr";
+
 import "./ProjectsCard.css";
 
 type CardProps = {
@@ -43,15 +45,15 @@ export const ProjectsCard = ({
         <p>{description}</p>
         <span className="techs-used">{icons}</span>
         <div className="go-to">
-          <button>
+          <button className="deploy-btn btn">
             <GrDeploy />
             <a href={deploy} target="_blank">
               Deploy
             </a>
           </button>
 
-          <button>
-            <GrGithub />
+          <button className="repository-btn btn">
+            <FiGithub />
             <a href={repository} target="_blank">
               Repository
             </a>

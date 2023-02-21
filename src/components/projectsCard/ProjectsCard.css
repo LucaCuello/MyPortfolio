@@ -45,7 +45,7 @@
 }
 
 .techs-used svg {
-  color: var(--clear-ligth);
+  color: var(--ligth-main);
 }
 
 .go-to {
@@ -55,7 +55,7 @@
   gap: 10px;
 }
 
-.go-to button {
+.btn {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -63,6 +63,7 @@
   border: none;
   gap: 5px;
   background-color: var(--clear-ligth);
+  background-color: var(--accent-ligth);
   font-size: var(--small);
   text-transform: uppercase;
   font-weight: 600;
@@ -71,12 +72,42 @@
   transition: all 150ms ease;
 }
 
-.go-to button a {
+.btn:hover {
+  transform: scale(1.02);
+  transition: all 150ms ease;
+}
+
+.btn a {
   color: var(--dark-main);
 }
 
-.go-to button:hover {
+.deploy-btn svg {
+  transform: rotate(0);
+  transition: transform 200ms ease;
+}
+
+.deploy-btn:hover svg {
+  transform: rotate(40deg);
+  transition: transform 200ms ease;
+}
+
+.repository-btn {
   background-color: var(--ligth-main);
-  transform: scale(1.02);
-  transition: all 150ms ease;
+}
+
+.deploy-btn:hover {
+  box-shadow: 5px 5px var(--accent-dark);
+}
+
+.repository-btn:hover {
+  box-shadow: 5px 5px var(--clear-ligth);
+}
+
+.repository-btn svg {
+  transition: transform 200ms ease;
+}
+
+.repository-btn:hover svg {
+  transform: rotate(10deg);
+  transition: transform 200ms ease;
 }
