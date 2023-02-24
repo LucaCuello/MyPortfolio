@@ -38,31 +38,6 @@
   animation: movement 600ms ease-in-out;
 }
 
-/* MaterialUI override */
-
-.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
-  background-color: var(--dark-main) !important;
-  border-radius: 20px !important;
-}
-.css-bdhsul-MuiTypography-root-MuiDialogTitle-root {
-  font-family: "Raleway", sans-serif !important;
-  font-weight: 700 !important;
-  color: var(--clear-white) !important;
-}
-
-.css-qfso29-MuiTypography-root-MuiDialogContentText-root {
-  font-family: "Raleway", sans-serif !important;
-  font-weight: 500 !important;
-  color: var(--clear-white) !important;
-}
-
-.css-1hny3k0-MuiButtonBase-root-MuiButton-root,
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-  color: var(--accent-ligth) !important;
-  font-family: "Raleway", sans-serif !important;
-  font-weight: 700 !important;
-}
-
 @keyframes movement {
   50% {
     rotate: 20deg;
