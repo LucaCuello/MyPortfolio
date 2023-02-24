@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { AiOutlineDownload, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { HiOutlineDocumentText } from "react-icons/hi";
 import CvEn from "../../assets/curriculum/CVFrontEN.pdf";
 import { Button } from "../../components/button/Button";
 import "./AboutMe.css";
@@ -16,16 +17,16 @@ export const AboutMe = () => {
       <h2 className="subheading">Front-end Dev</h2>
       <div className="buttons-container">
         <Button
-          content="Get Resume"
+          content="Resume"
           direction={CvEn}
-          icon={<AiOutlineDownload />}
-          download={true}
+          icon={<HiOutlineDocumentText />}
+          document={true}
         ></Button>
         <Button
           content="Contact me"
           direction="mailto:lucagcuello@gmail.com"
           icon={<AiOutlineMail />}
-          download={false}
+          document={false}
         ></Button>
       </div>
       <main className="aboutme-body">
