@@ -1,9 +1,10 @@
-import Button2 from "@mui/material/Button";
+import ButtonMui from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import { styled } from "@mui/material/styles";
 import { useState } from "react";
 import "./Button.css";
 
@@ -11,10 +12,37 @@ type ButtonProps = {
   content: string;
   direction: string;
   icon: React.ReactNode;
-  download: boolean;
+  document: boolean;
 };
 
-export const Button = ({ content, direction, icon, download }: ButtonProps) => {
+const CustomDialogTitle = styled(DialogTitle)`
+  font-family: "Raleway", sans-serif;
+  color: var(--clear-white);
+  font-weight: 700;
+`;
+
+const CustomDialogContentText = styled(DialogContentText)`
+  font-family: "Raleway", sans-serif;
+  color: var(--clear-white);
+  font-weight: 400;
+`;
+
+const CustomButtonMui = styled(ButtonMui)`
+  font-family: "Raleway", sans-serif;
+  color: var(--accent-ligth);
+  font-weight: 700;
+  :hover {
+    color: var(--dark-main);
+    background-color: var(--accent-ligth);
+  }
+`;
+
+const dialogProps = {
+  backgroundColor: "var(--dark-main)",
+  borderRadius: "15px",
+};
+
+export const Button = ({ content, direction, icon, document }: ButtonProps) => {
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -34,28 +62,31 @@ export const Button = ({ content, direction, icon, download }: ButtonProps) => {
       <button
         className="comp-button"
         onClick={() => {
-          download ? handleClickOpen() : null;
+          document ? handleClickOpen() : null;
         }}
       >
         {icon}
-        {download ? content : <a href={direction}>{content}</a>}
+        {document ? content : <a href={direction}>{content}</a>}
       </button>
       <Dialog
+        PaperProps={{ style: dialogProps }}
         open={open}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Get resume?"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            You're about to get redirected to a PDF file with my resume. Do you want
-            to procede?
-          </DialogContentText>
+        <CustomDialogTitle id="alert-dialog-title">
+          {"Before you go"}
+        </CustomDialogTitle>
+        <DialogContent style={{ color: "var(--clear-white)" }}>
+          <CustomDialogContentText id="alert-dialog-description">
+            A new browser tab with my personal resume (.PDF) is about to open. Do you
+            want to procede?
+          </CustomDialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button2 onClick={handleClose}>No, thanks</Button2>
-          <Button2
+          <CustomButtonMui onClick={handleClose}>No, thanks</CustomButtonMui>
+          <CustomButtonMui
             onClick={() => {
               handleClose();
               handdleDownload();
@@ -63,7 +94,7 @@ export const Button = ({ content, direction, icon, download }: ButtonProps) => {
             autoFocus
           >
             Yes!
-          </Button2>
+          </CustomButtonMui>
         </DialogActions>
       </Dialog>{" "}
     </>
