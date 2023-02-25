@@ -104,6 +104,17 @@
     width: 90%;
     word-wrap: break-word;
   }
+
+  /* Not found */
+  .not-found {
+    text-align: center;
+  }
+  .not-found p {
+    text-align: center;
+  }
+  .not-found .heading {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 680px) {
