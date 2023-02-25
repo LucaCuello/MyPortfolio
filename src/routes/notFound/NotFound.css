@@ -1,0 +1,14 @@
+.not-found p {
+  color: var(--clear-white);
+  font-size: var(--normal);
+  text-align: left;
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.heading-error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
