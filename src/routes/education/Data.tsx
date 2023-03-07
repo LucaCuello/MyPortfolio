@@ -1,6 +1,7 @@
 import EnglishCertificate from "../../assets/certificates/EnglishCertificate.png";
 import ITSupportCertificate from "../../assets/certificates/ITSupportEspecialistCertificate.png";
 import ONECertificate from "../../assets/certificates/ONECertificate.png";
+import UXUICertificate from "../../assets/certificates/UXUICertificate.png";
 
 export const educationData = [
   {
@@ -12,7 +13,7 @@ export const educationData = [
     date: "01/2023 - Current",
     certificateLink: "#",
     certificateAvailible: false,
-    certificateImage: "HOLAHOLAHOLA",
+    certificateImage: "",
   },
   {
     title: "Oracle Next Education",
@@ -34,9 +35,9 @@ export const educationData = [
       "Bootcamp that I'm taking to improve my design skills. The bootcamp itself covers a range of topics such as reasearch, prototyping, visual design and front-end development.",
     place: "The Open Bootcamp",
     date: "02/2023 - Current",
-    certificateLink: "#",
-    certificateAvailible: false,
-    certificateImage: "",
+    certificateLink: "https://certificate.uxuiopen.com/6402cb055edfe616835ac887",
+    certificateAvailible: true,
+    certificateImage: UXUICertificate,
   },
   {
     title: "EFSET",
