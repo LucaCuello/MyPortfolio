@@ -16,6 +16,8 @@ import {
   SiMaterialui,
   SiNotion,
   SiNpm,
+  SiPandas,
+  SiPython,
   SiReact,
   SiSass,
   SiStyledcomponents,
@@ -41,6 +43,12 @@ export const programmingLanguagesData = [
     name: "Java",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
+  },
+  {
+    icon: [<SiPython key={crypto.randomUUID()} />],
+    name: "Python",
+    mainColor: "var(--accent-ligth)",
+    ligthColor: "var(--accent)",
   },
 ];
 
@@ -164,5 +172,11 @@ export const toolsData = [
     name: "Google Analytics",
     mainColor: "var(--ligth-main)",
     ligthColor: "var(--clear-ligth)",
+  },
+  {
+    icon: [<SiPandas key={crypto.randomUUID()} />],
+    name: "Pandas",
+    mainColor: "var(--accent-ligth)",
+    ligthColor: "var(--accent)",
   },
 ];
