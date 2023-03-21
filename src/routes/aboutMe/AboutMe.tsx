@@ -14,7 +14,7 @@ export const AboutMe = () => {
       className="about-me"
     >
       <h1 className="heading">Luca Cuello</h1>
-      <h2 className="subheading">Front-end Dev</h2>
+      <h2 className="subheading">Front-end developer</h2>
       <div className="buttons-container">
         <Button
           content="Resume"
@@ -35,10 +35,10 @@ export const AboutMe = () => {
           creating visually appealing and user-friendly interfaces.
         </p>
         <p>
-          I am currently expanding my skills by studying React and Angular, and I am
-          always eager to apply my knowledge and experience to new projects. I strive
-          to consistently produce high-quality code that not only functions well, but
-          also looks great.
+          I am currently expanding my skills by studying UXUI Design and Data
+          Analytics with Python, and I am always eager to apply my knowledge and
+          experience to new projects. I strive to consistently produce high-quality
+          code that not only functions well, but also looks great.
         </p>
         <p>
           I am excited to share my projects with you and I look forward to the
