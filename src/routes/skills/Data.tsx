@@ -14,6 +14,7 @@ import {
   SiJava,
   SiJavascript,
   SiMaterialui,
+  SiMysql,
   SiNotion,
   SiNpm,
   SiPandas,
@@ -24,6 +25,8 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+
+import { GrMysql } from "react-icons/gr";
 
 export const programmingLanguagesData = [
   {
@@ -162,21 +165,27 @@ export const toolsData = [
     ligthColor: "var(--clear-ligth)",
   },
   {
-    icon: [<SiNotion key={crypto.randomUUID()} />],
-    name: "Notion",
+    icon: [<GrMysql key={crypto.randomUUID()} />],
+    name: "MySQL Server",
     mainColor: "var(--accent-ligth)",
     ligthColor: "var(--accent)",
-  },
-  {
-    icon: [<SiGoogleanalytics key={crypto.randomUUID()} />],
-    name: "Google Analytics",
-    mainColor: "var(--ligth-main)",
-    ligthColor: "var(--clear-ligth)",
   },
   {
     icon: [<SiPandas key={crypto.randomUUID()} />],
     name: "Pandas",
+    mainColor: "var(--ligth-main)",
+    ligthColor: "var(--clear-ligth)",
+  },
+  {
+    icon: [<SiGoogleanalytics key={crypto.randomUUID()} />],
+    name: "Google Analytics",
     mainColor: "var(--accent-ligth)",
     ligthColor: "var(--accent)",
+  },
+  {
+    icon: [<SiNotion key={crypto.randomUUID()} />],
+    name: "Notion",
+    mainColor: "var(--ligth-main)",
+    ligthColor: "var(--clear-ligth)",
   },
 ];
