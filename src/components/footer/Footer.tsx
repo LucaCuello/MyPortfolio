@@ -12,7 +12,7 @@ export const Footer = () => {
             target="_blank"
           >
             <FaLinkedin />
-            Contact me
+            Contact me on Linkedin
           </a>
         </span>
         <span>
@@ -22,12 +22,12 @@ export const Footer = () => {
             target="_blank"
           >
             <FaGithubSquare />
-            Follow me
+            Follow me on Github
           </a>
         </span>
       </div>
       <div className="update-info">
-        <p>Last update: 02/24/2023</p>
+        <p>Last update: 05/15/2023</p>
       </div>
     </footer>
   );
