@@ -38,11 +38,11 @@ export const EducationCard = ({
         </span>
       </div>
       <p className="card-description">{description}</p>
-      <EducationCardButton
+      {/* <EducationCardButton
         certificateLink={certificateLink}
         certificateAvailible={certificateAvailible}
         certificateImage={certificateImage}
-      />
+      /> */}
     </motion.div>
   );
 };
