@@ -5,12 +5,12 @@ import UXUICertificate from "../../assets/certificates/UXUICertificate.png";
 
 export const educationData = [
   {
-    title: "Software Development",
-    courseType: "Associate Degree",
+    title: "Computer Information Systems",
+    courseType: "Degree",
     description:
-      "In this degree I will learn all about software development, I'm personally very excited to continue to especialize and keep learning new things.",
-    place: "IFTS N° 29",
-    date: "01/2023 - Current",
+      "In this degree I will learn all about computer information systems and programming, I'm very excited to continue to especialize in this area and keep learning new things.",
+    place: "Universidad Tecnológica Nacional",
+    date: "05/2023 - Current",
     certificateLink: "#",
     certificateAvailible: false,
     certificateImage: "",
@@ -19,7 +19,7 @@ export const educationData = [
     title: "Oracle Next Education",
     courseType: "Crash-Course",
     description:
-      "Crash-course that helped to understand HTML/CSS/JavaScript more and it introduced me to a new programming language, Java, where I've learnt about Object-Oriented programming.",
+      "Crash-course that helped to understand HTML/CSS/JavaScript more and it introduced me to a new programming language, Java, where I've learnt about Object-Oriented programming. I've also learnt Data Analytics with Python and SQL with MySQL Server.",
     place: "Oracle",
     date: "08/2022 - 02/2023",
     certificateLink:
@@ -51,10 +51,10 @@ export const educationData = [
     certificateImage: EnglishCertificate,
   },
   {
-    title: "It Support",
+    title: "IT Support",
     courseType: "Specialization",
     description:
-      "This specialization teached me a lot of new cool stuff, from installing hardware components to creating a virtual machine. I've learnt how to use different OS, creating and executing scripts, troubleshooting and much more.",
+      "This specialization teached me a lot of new cool stuff, from installing hardware components to creating a virtual machine. I've learnt how to use different OS's, creating and executing scripts, troubleshooting and much more.",
     place: "Coursera, Google",
     date: "09/2022 - 01/2023",
     certificateLink:
