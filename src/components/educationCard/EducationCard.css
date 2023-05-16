@@ -18,10 +18,22 @@
   width: 50ch;
 }
 
-.card-subheading {
+.card-heading {
   color: var(--accent-ligth);
   font-size: var(--sub-heading);
   font-weight: 700;
+}
+
+.card-subheading {
+  color: var(--accent-ligth);
+  font-size: var(--medium);
+  font-weight: 500;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .card-info {

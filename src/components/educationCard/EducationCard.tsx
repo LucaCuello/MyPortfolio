@@ -31,9 +31,8 @@ export const EducationCard = ({
       className="study-card"
     >
       <div className="head">
-        <h2 className="card-subheading">
-          {title} | {courseType}
-        </h2>
+        <h2 className="card-heading">{title}</h2>
+        <h3 className="card-subheading">{courseType}</h3>
         <span className="card-info">
           {place} | {date}
         </span>
