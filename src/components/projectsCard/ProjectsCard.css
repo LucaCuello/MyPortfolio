@@ -36,6 +36,10 @@
   width: 50ch;
 }
 
+.project-description h3 {
+  font-weight: 700;
+}
+
 .techs-used {
   display: flex;
   justify-content: center;
