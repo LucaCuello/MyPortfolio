@@ -33,15 +33,17 @@ export const ProjectsCard = ({
     >
       <motion.img
         initial={{ scale: 0 }}
-        animate={{ scale: [0.8, 1.3, 1] }}
+        animate={{ scale: 1 }}
         transition={{ duration: 0.3, ease: "linear" }}
+        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.03 }}
         className="project-preview"
         src={imagePath}
         draggable="false"
         alt="Image preview of a project"
       ></motion.img>
       <div className="project-description">
-        <h3 className="card-subheading">{title}</h3>
+        <h2 className="card-heading">{title}</h2>
         <p>{description}</p>
         <span className="techs-used">{icons}</span>
         <div className="go-to">
