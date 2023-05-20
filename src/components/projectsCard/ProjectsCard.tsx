@@ -47,19 +47,14 @@ export const ProjectsCard = ({
         <p>{description}</p>
         <span className="techs-used">{icons}</span>
         <div className="go-to">
-          <button className="deploy-btn btn">
+          <a className="deploy-btn btn" href={deploy} target="_blank">
             <GrDeploy />
-            <a href={deploy} target="_blank">
-              Deploy
-            </a>
-          </button>
-
-          <button className="repository-btn btn">
+            Deploy
+          </a>
+          <a className="repository-btn btn" href={repository} target="_blank">
             <FiGithub />
-            <a href={repository} target="_blank">
-              Repository
-            </a>
-          </button>
+            Repository
+          </a>
         </div>
       </div>
     </motion.div>

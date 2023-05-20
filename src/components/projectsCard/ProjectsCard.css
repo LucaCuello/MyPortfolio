@@ -62,8 +62,8 @@
   align-items: center;
   border: none;
   gap: 5px;
-  background-color: var(--clear-ligth);
   background-color: var(--accent-ligth);
+  color: var(--dark-main);
   font-size: var(--small);
   text-transform: uppercase;
   font-weight: 600;
@@ -75,10 +75,6 @@
 .btn:hover {
   transform: scale(1.02);
   transition: all 150ms ease;
-}
-
-.btn a {
-  color: var(--dark-main);
 }
 
 .deploy-btn svg {
