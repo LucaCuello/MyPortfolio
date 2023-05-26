@@ -22,16 +22,16 @@ export const Skills = () => {
         <div className="programming-languages">
           <h2 className="category-heading">Programming languages</h2>
           <div className="languages">
-            {programmingLanguagesData.map((props) => (
-              <SkillsCard {...props} key={crypto.randomUUID()} />
+            {programmingLanguagesData.map((props, index) => (
+              <SkillsCard {...props} index={index} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>
         <div className="front-end">
           <h2 className="category-heading">Front-end</h2>
           <div className="front-end-frameworks">
-            {frontEndData.map((props) => (
-              <SkillsCard {...props} key={crypto.randomUUID()} />
+            {frontEndData.map((props, index) => (
+              <SkillsCard {...props} index={index} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>
@@ -39,8 +39,8 @@ export const Skills = () => {
         <div className="graphic-design">
           <h2 className="category-heading">Design</h2>
           <div className="design">
-            {designData.map((props) => (
-              <SkillsCard {...props} key={crypto.randomUUID()} />
+            {designData.map((props, index) => (
+              <SkillsCard {...props} index={index} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>
@@ -48,8 +48,8 @@ export const Skills = () => {
         <div className="other-tools">
           <h2 className="category-heading">Other tools</h2>
           <div className="tools">
-            {toolsData.map((props) => (
-              <SkillsCard {...props} key={crypto.randomUUID()} />
+            {toolsData.map((props, index) => (
+              <SkillsCard {...props} index={index} key={crypto.randomUUID()} />
             ))}
           </div>
         </div>
