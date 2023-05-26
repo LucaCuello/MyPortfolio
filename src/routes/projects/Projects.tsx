@@ -17,9 +17,9 @@ export const Projects = () => {
   return (
     <motion.div
       layout="preserve-aspect"
-      initial={{ opacity: 0, y: -200 }}
-      animate={{ opacity: 0.8, y: 0 }}
-      transition={{ duration: 0.3, layout: { duration: 0.2 } }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.8 }}
+      transition={{ duration: 0.4, layout: { duration: 0.5 } }}
       className="projects-container"
     >
       <h1 className="heading">My projects</h1>
