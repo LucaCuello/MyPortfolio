@@ -218,6 +218,26 @@
     text-align: left;
   }
 
+  /* Skills */
+
+  .skills-container {
+    align-items: flex-start;
+  }
+
+  .languages,
+  .front-end-frameworks,
+  .design,
+  .tools {
+    justify-content: flex-start;
+  }
+
+  .programming-languages,
+  .front-end,
+  .graphic-design,
+  .other-tools {
+    align-items: flex-start;
+  }
+
   /* Footer */
   .contact-me {
     flex-direction: column;
