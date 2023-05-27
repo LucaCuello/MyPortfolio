@@ -13,8 +13,15 @@
   }
 
   .picture-container {
+    transform: none !important;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
     order: -1;
-    transform: scale(0.7) !important;
+  }
+
+  .picture-container img {
+    width: 120px;
   }
 
   .about-me {
@@ -187,7 +194,21 @@
     height: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 490px) {
+  /* About me */
+  .aboutme-container {
+    align-items: flex-start;
+  }
+  .about-me {
+    align-items: flex-start;
+  }
+  .aboutme-body {
+    text-align: left;
+  }
+  .buttons-container {
+    align-items: unset;
+  }
+
   /* Footer */
   .contact-me {
     flex-direction: column;
