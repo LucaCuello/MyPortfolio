@@ -146,10 +146,6 @@
     height: auto;
   }
 
-  .education-container h1 {
-    text-align: center;
-  }
-
   /* Skills responsive */
 
   .skills-card {
@@ -171,18 +167,6 @@
     height: auto;
   }
 
-  .project {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project-description {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
   .certificate-container {
     width: 95%;
     padding: 55px 0px 15px 0;
@@ -193,8 +177,7 @@
     width: 95%;
     height: 100%;
   }
-}
-@media screen and (max-width: 490px) {
+
   /* About me */
   .aboutme-container {
     align-items: flex-start;
@@ -220,7 +203,8 @@
 
   /* Skills */
 
-  .skills-container {
+  .skills-container,
+  .skills-card-container {
     align-items: flex-start;
   }
 
@@ -236,6 +220,7 @@
   .graphic-design,
   .other-tools {
     align-items: flex-start;
+    text-align: left;
   }
 
   /* Projects */
@@ -247,6 +232,7 @@
   .project {
     align-items: flex-start;
     justify-content: flex-start;
+    flex-direction: column;
   }
 
   .project-description {
@@ -256,15 +242,23 @@
   .project-description p {
     text-align: left;
   }
-
+}
+@media screen and (max-width: 490px) {
   /* Footer */
   .contact-me {
     flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
     gap: 10px;
   }
 
+  .update-info {
+    align-self: flex-start;
+  }
+
   .project-preview {
-    width: 200px;
+    width: 100%;
+    height: 160px;
   }
 
   .project-description {
