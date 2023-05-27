@@ -238,6 +238,25 @@
     align-items: flex-start;
   }
 
+  /* Projects */
+
+  .projects-container {
+    align-items: flex-start;
+  }
+
+  .project {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .project-description {
+    align-items: flex-start;
+  }
+
+  .project-description p {
+    text-align: left;
+  }
+
   /* Footer */
   .contact-me {
     flex-direction: column;
