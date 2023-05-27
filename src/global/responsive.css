@@ -209,6 +209,15 @@
     align-items: unset;
   }
 
+  /* Education */
+  .education-container {
+    align-items: flex-start;
+  }
+  .study-card {
+    align-items: flex-start;
+    text-align: left;
+  }
+
   /* Footer */
   .contact-me {
     flex-direction: column;
