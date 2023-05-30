@@ -5,7 +5,7 @@ import UXUICertificate from "../../assets/certificates/UXUICertificate.png";
 
 export const educationData = [
   {
-    title: "Computer Information Systems",
+    title: "Information Systems | Programming",
     courseType: "Degree",
     description:
       "In this degree I will learn all about computer information systems and programming, I'm very excited to continue to especialize in this area and keep learning new things.",
@@ -27,7 +27,18 @@ export const educationData = [
     certificateAvailible: true,
     certificateImage: ONECertificate,
   },
-
+  {
+    title: "Salesforce QA",
+    courseType: "Training",
+    description:
+      "Training where I'm learning concepts of Salesforce such as flows, auto-flows, custom objects, custom profiles, SOQL, JQL between other subjects. The main goal of this training is to get to know Salesforce and testing.",
+    place: "XDGen",
+    date: "03/2023 - Current",
+    certificateLink:
+      "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
+    certificateAvailible: true,
+    certificateImage: ONECertificate,
+  },
   {
     title: "UX/UI Open",
     courseType: "Bootcamp",
@@ -40,17 +51,6 @@ export const educationData = [
     certificateImage: UXUICertificate,
   },
   {
-    title: "EFSET",
-    courseType: "English Certificate",
-    description:
-      "English test where I've got the qualification of 74/100 (C2 Proficient).",
-    place: "Efset",
-    date: "01/2023",
-    certificateLink: "https://www.efset.org/cert/NpefMm",
-    certificateAvailible: true,
-    certificateImage: EnglishCertificate,
-  },
-  {
     title: "IT Support",
     courseType: "Specialization",
     description:
@@ -61,5 +61,16 @@ export const educationData = [
       "https://www.coursera.org/account/accomplishments/specialization/certificate/YAPVP7AAUSJF",
     certificateAvailible: true,
     certificateImage: ITSupportCertificate,
+  },
+  {
+    title: "EFSET",
+    courseType: "English Certificate",
+    description:
+      "English test where I've got the qualification of 74/100 (C2 Proficient).",
+    place: "Efset",
+    date: "01/2023",
+    certificateLink: "https://www.efset.org/cert/NpefMm",
+    certificateAvailible: true,
+    certificateImage: EnglishCertificate,
   },
 ];
