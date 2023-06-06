@@ -1,18 +1,26 @@
-import {
-  SiCss3,
-  SiGooglechrome,
-  SiHtml5,
-  SiJavascript,
-  SiReact,
-  SiTypescript,
-  SiVite,
-} from "react-icons/si";
+import { SiCss3, SiFramer, SiGooglechrome, SiHtml5, SiJavascript, SiReact, SiTypescript, SiVite } from "react-icons/si";
 import DolarLive from "../../assets/previews/DolarLive.png";
+import FullioStudioPreview from "../../assets/previews/FullioStudio.png";
 import PortfolioPrwview from "../../assets/previews/PortfolioPreview.png";
 import RetroToDoPreview from "../../assets/previews/RetroToDo.png";
 import SpookyShopPreview from "../../assets/previews/SpookyShop.png";
 
 export const projectsData = [
+  {
+    title: "Fullio Studio",
+    description:
+      "Freelance project I've made for a fashion designer. The project was built using React, TypeScript and framer motion to make the transitions as smooth as possible. The main objective was to accomplish a clean and minimalistic style.",
+    icons: [
+      <SiCss3 key={crypto.randomUUID()} />,
+      <SiReact key={crypto.randomUUID()} />,
+      <SiVite key={crypto.randomUUID()} />,
+      <SiTypescript key={crypto.randomUUID()} />,
+      <SiFramer key={crypto.randomUUID()} />,
+    ],
+    imagePath: FullioStudioPreview,
+    repository: "https://github.com/LucaCuello/FullioStudioPortfolio",
+    deploy: "https://fullio-studio.vercel.app/home",
+  },
   {
     title: "DolarLive",
     description:
@@ -23,6 +31,7 @@ export const projectsData = [
       <SiVite key={crypto.randomUUID()} />,
       <SiTypescript key={crypto.randomUUID()} />,
       <SiGooglechrome key={crypto.randomUUID()} />,
+      <SiFramer key={crypto.randomUUID()} />,
     ],
     imagePath: DolarLive,
     repository: "https://github.com/LucaCuello/DolarLive",
@@ -37,6 +46,7 @@ export const projectsData = [
       <SiCss3 key={crypto.randomUUID()} />,
       <SiReact key={crypto.randomUUID()} />,
       <SiVite key={crypto.randomUUID()} />,
+      <SiFramer key={crypto.randomUUID()} />,
     ],
     imagePath: RetroToDoPreview,
     repository: "https://github.com/LucaCuello/React-Retro-To-Do-App",
@@ -65,6 +75,7 @@ export const projectsData = [
       <SiTypescript key={crypto.randomUUID()} />,
       <SiReact key={crypto.randomUUID()} />,
       <SiVite key={crypto.randomUUID()} />,
+      <SiFramer key={crypto.randomUUID()} />,
     ],
     imagePath: PortfolioPrwview,
     repository: "https://github.com/LucaCuello/MyPortfolio",
