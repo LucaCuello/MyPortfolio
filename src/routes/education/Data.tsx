@@ -5,7 +5,7 @@ import UXUICertificate from "../../assets/certificates/UXUICertificate.png";
 
 export const educationData = [
   {
-    title: "Information Systems | Programming",
+    title: "Information Systems",
     courseType: "Degree",
     description:
       "In this degree I will learn all about computer information systems and programming, I'm very excited to continue to especialize in this area and keep learning new things.",
@@ -22,8 +22,7 @@ export const educationData = [
       "Crash-course that helped to understand HTML/CSS/JavaScript more and it introduced me to a new programming language, Java, where I've learnt about Object-Oriented programming. I've also learnt Data Analytics with Python and SQL with MySQL Server.",
     place: "Oracle",
     date: "08/2022 - 02/2023",
-    certificateLink:
-      "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
+    certificateLink: "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
     certificateAvailible: true,
     certificateImage: ONECertificate,
   },
@@ -34,8 +33,7 @@ export const educationData = [
       "Training where I'm learning concepts of Salesforce such as flows, auto-flows, custom objects, custom profiles, SOQL, JQL between other subjects. The main goal of this training is to get to know Salesforce and testing.",
     place: "XDGen",
     date: "03/2023 - Current",
-    certificateLink:
-      "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
+    certificateLink: "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
     certificateAvailible: true,
     certificateImage: ONECertificate,
   },
@@ -57,16 +55,14 @@ export const educationData = [
       "This specialization teached me a lot of new cool stuff, from installing hardware components to creating a virtual machine. I've learnt how to use different OS's, creating and executing scripts, troubleshooting and much more.",
     place: "Coursera, Google",
     date: "09/2022 - 01/2023",
-    certificateLink:
-      "https://www.coursera.org/account/accomplishments/specialization/certificate/YAPVP7AAUSJF",
+    certificateLink: "https://www.coursera.org/account/accomplishments/specialization/certificate/YAPVP7AAUSJF",
     certificateAvailible: true,
     certificateImage: ITSupportCertificate,
   },
   {
     title: "EFSET",
     courseType: "English Certificate",
-    description:
-      "English test where I've got the qualification of 74/100 (C2 Proficient).",
+    description: "English test where I've got the qualification of 74/100 (C2 Proficient).",
     place: "Efset",
     date: "01/2023",
     certificateLink: "https://www.efset.org/cert/NpefMm",

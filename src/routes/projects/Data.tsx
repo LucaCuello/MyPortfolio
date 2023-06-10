@@ -19,7 +19,7 @@ export const projectsData = [
     ],
     imagePath: FullioStudioPreview,
     repository: "https://github.com/LucaCuello/FullioStudioPortfolio",
-    deploy: "https://fulliostudio.com/home",
+    deploy: "https://fulliostudio.com/",
   },
   {
     title: "DolarLive",
