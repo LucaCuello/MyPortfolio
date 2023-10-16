@@ -5,48 +5,39 @@ import UXUICertificate from "../../assets/certificates/UXUICertificate.png";
 
 export const educationData = [
   {
-    title: "Information Systems",
+    title: "University degree in Programming",
     courseType: "Degree",
     description:
-      "In this degree I will learn all about computer information systems and programming, I'm very excited to continue to especialize in this area and keep learning new things.",
+      "In this degree, I have learned to develop and improve algorithms using C++ and work on the production and enhancement of software. Additionally, I have acquired skills to analyze and solve data processing issues, debug and transfer processed information.",
     place: "Universidad Tecnológica Nacional",
-    date: "05/2023 - Current",
+    date: "05/2023 - Present",
     certificateLink: "#",
     certificateAvailible: false,
     certificateImage: "",
   },
   {
-    title: "Oracle Next Education",
-    courseType: "Crash-Course",
+    title: "Full-Stack Developer",
+    courseType: "Diplomma",
     description:
-      "Crash-course that helped to understand HTML/CSS/JavaScript more and it introduced me to a new programming language, Java, where I've learnt about Object-Oriented programming. I've also learnt Data Analytics with Python and SQL with MySQL Server.",
+      "In this diploma, I'm currently improving my React skills and learning a new framework: Angular. As for the back-end, I'll learn NodeJS.",
+    place: "UTN E-Learning",
+    date: "08/2023 - Present",
+    certificateLink:
+      "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
+    certificateAvailible: true,
+    certificateImage: ONECertificate,
+  },
+  {
+    title: "Oracle Next Education",
+    courseType: "Crash course",
+    description:
+      "Crash course that helped to understand HTML/CSS/JavaScript more and it introduced me to a new programming language, Java, where I've learnt about Object-Oriented programming. I've also learnt Data Analytics with Python and SQL with MySQL Server.",
     place: "Oracle",
     date: "08/2022 - 02/2023",
-    certificateLink: "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
+    certificateLink:
+      "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
     certificateAvailible: true,
     certificateImage: ONECertificate,
-  },
-  {
-    title: "Salesforce QA",
-    courseType: "Training",
-    description:
-      "Training where I'm learning concepts of Salesforce such as flows, auto-flows, custom objects, custom profiles, SOQL, JQL between other subjects. The main goal of this training is to get to know Salesforce and testing.",
-    place: "XDGen",
-    date: "03/2023 - Current",
-    certificateLink: "https://app.aluracursos.com/program/certificate/58d5d3bb-8953-449a-b523-87a0bdea60e0",
-    certificateAvailible: true,
-    certificateImage: ONECertificate,
-  },
-  {
-    title: "UX/UI Open",
-    courseType: "Bootcamp",
-    description:
-      "Bootcamp that I'm taking to improve my design skills. The bootcamp itself covers a range of topics such as reasearch, prototyping, visual design and front-end development.",
-    place: "The Open Bootcamp",
-    date: "02/2023 - Current",
-    certificateLink: "https://certificate.uxuiopen.com/6402cb055edfe616835ac887",
-    certificateAvailible: true,
-    certificateImage: UXUICertificate,
   },
   {
     title: "IT Support",
@@ -55,18 +46,9 @@ export const educationData = [
       "This specialization teached me a lot of new cool stuff, from installing hardware components to creating a virtual machine. I've learnt how to use different OS's, creating and executing scripts, troubleshooting and much more.",
     place: "Coursera, Google",
     date: "09/2022 - 01/2023",
-    certificateLink: "https://www.coursera.org/account/accomplishments/specialization/certificate/YAPVP7AAUSJF",
+    certificateLink:
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/YAPVP7AAUSJF",
     certificateAvailible: true,
     certificateImage: ITSupportCertificate,
-  },
-  {
-    title: "EFSET",
-    courseType: "English Certificate",
-    description: "English test where I've got the qualification of 74/100 (C2 Proficient).",
-    place: "Efset",
-    date: "01/2023",
-    certificateLink: "https://www.efset.org/cert/NpefMm",
-    certificateAvailible: true,
-    certificateImage: EnglishCertificate,
   },
 ];

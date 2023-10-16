@@ -13,7 +13,7 @@ export const AboutMe = () => {
       transition={{ duration: 0.8, ease: "backInOut" }}
       className="about-me"
     >
-      <h1 className="heading">Luca Cuello</h1>
+      <h1 className="heading">Luca</h1>
       <h2 className="subheading">Front-end developer</h2>
       <div className="buttons-container">
         <Button
@@ -31,18 +31,17 @@ export const AboutMe = () => {
       </div>
       <main className="aboutme-body">
         <p>
-          Welcome to my portfolio! I am a front-end developer with a passion for
-          creating visually appealing and user-friendly interfaces.
+          Hello and welcome to my portfolio! I’m a front-end developer who loves
+          crafting visually delightful and easy-to-use interfaces.
         </p>
         <p>
-          I am currently expanding my skills by studying UXUI Design and Data
-          Analytics with Python, and I am always eager to apply my knowledge and
-          experience to new projects. I strive to consistently produce high-quality
-          code that not only functions well, but also looks great.
+          Currently, I'm pursuing a university degree and mastering full-stack
+          with my diploma. Every project refines my skills and knowledge. I aim
+          to deliver both functional and aesthetically pleasing code.
         </p>
         <p>
-          I am excited to share my projects with you and I look forward to the
-          opportunity to work together.
+          Take a look around, explore my projects, and let's chat! I’d love to
+          hear about how we might work together.
         </p>
       </main>
     </motion.div>
