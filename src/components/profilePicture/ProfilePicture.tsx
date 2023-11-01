@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import avatar from "../../assets/avatar/avatartransparent.png";
+import avatar from "../../assets/avatar/avatar.png";
 import "./ProfilePicture.css";
 
 export const ProfilePicture = () => {
