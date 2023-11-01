@@ -13,7 +13,7 @@
 }
 
 .picture-container img {
-  width: 230px;
+  width: 250px;
   height: auto;
   transform: translateY(30px) scale(1);
   transition: all 400ms ease;
