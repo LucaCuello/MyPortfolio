@@ -1,15 +1,42 @@
-import { SiCss3, SiFramer, SiGooglechrome, SiHtml5, SiJavascript, SiReact, SiTypescript, SiVite } from "react-icons/si";
+import {
+  SiCss3,
+  SiFirebase,
+  SiFramer,
+  SiGooglechrome,
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+} from "react-icons/si";
 import DolarLive from "../../assets/previews/DolarLive.png";
 import FullioStudioPreview from "../../assets/previews/FullioStudio.png";
+import GalaxyStore from "../../assets/previews/GalaxyStore.png";
 import PortfolioPrwview from "../../assets/previews/PortfolioPreview.png";
 import RetroToDoPreview from "../../assets/previews/RetroToDo.png";
 import SpookyShopPreview from "../../assets/previews/SpookyShop.png";
 
 export const projectsData = [
   {
+    title: "GalaxyStore",
+    description:
+      "A modern ecommerce platform built with React and TypeScript, featuring dynamic product management and secure authentication via Firebase. Designed with Tailwind and NextUI for a sleek, user-friendly interface with a space-themed aesthetic.",
+    icons: [
+      <SiVite key={crypto.randomUUID()} />,
+      <SiReact key={crypto.randomUUID()} />,
+      <SiTypescript key={crypto.randomUUID()} />,
+      <SiTailwindcss key={crypto.randomUUID()} />,
+      <SiFirebase key={crypto.randomUUID()} />,
+    ],
+    imagePath: GalaxyStore,
+    repository: "https://github.com/LucaCuello/GalaxyStore",
+    deploy: "https://galaxystore.vercel.app",
+  },
+  {
     title: "Fullio Studio",
     description:
-      "Freelance project I've made for a fashion designer. The project was built using React, TypeScript and framer motion to make the transitions as smooth as possible. The main objective was to accomplish a clean and minimalistic style.",
+      "Developed for a fashion designer, this project uses React, TypeScript, and Framer Motion to achieve smooth transitions. The design is clean and minimalistic, aiming to align with the aesthetics of the fashion industry.",
     icons: [
       <SiCss3 key={crypto.randomUUID()} />,
       <SiReact key={crypto.randomUUID()} />,
@@ -24,7 +51,7 @@ export const projectsData = [
   {
     title: "DolarLive",
     description:
-      "Chrome extension designed specifically for users in Argentina. Developed using React, TypeScript, and Vite, this extension provides real-time updates on the prices of the US dollar and Euro, ensuring you stay up to date with the ever-changing currency exchange rates.",
+      "A Chrome extension for users in Argentina, built with React, TypeScript, and Vite. It provides current exchange rates for the US dollar and Euro, offering a practical tool for currency monitoring.",
     icons: [
       <SiCss3 key={crypto.randomUUID()} />,
       <SiReact key={crypto.randomUUID()} />,
@@ -41,7 +68,7 @@ export const projectsData = [
   {
     title: "Retro to-do",
     description:
-      "A retro-themed React to-do app. A fun and functional way to manage your tasks, you can add, delete and mark tasks as completed. The app features a sleek and nostalgic design, making it a pleasure to use. ",
+      "A to-do app with a retro theme, built in React. It allows users to add, delete, and mark tasks as completed, featuring a user-friendly interface with a retro design.",
     icons: [
       <SiCss3 key={crypto.randomUUID()} />,
       <SiReact key={crypto.randomUUID()} />,
@@ -55,7 +82,7 @@ export const projectsData = [
   {
     title: "SpookyShop",
     description:
-      "A pure CSS/JavaScript ecommerce, halloween themed. It utilizes JavaScript for its dynamic features such as register, login, adding a product to a cart among others. The platform is designed to be user-friendly and easy to navigate, with a clean and modern aesthetic.",
+      "An ecommerce site with a Halloween theme, created using CSS and JavaScript. It includes features like user registration, login, and a shopping cart, with a focus on a simple and intuitive user experience.",
     icons: [
       <SiHtml5 key={crypto.randomUUID()} />,
       <SiCss3 key={crypto.randomUUID()} />,
@@ -69,7 +96,7 @@ export const projectsData = [
   {
     title: "Portfolio",
     description:
-      "Built with React, Vite and TypeScript, this portfolio showcases my skills and projects as a front-end developer. I've also used React Router V6 to make it a SPA and framer motion for its animations.",
+      "My personal portfolio, showcasing various front-end projects. Built with React, Vite, and TypeScript, it includes React Router V6 for smooth single-page navigation and Framer Motion for animation effects.",
     icons: [
       <SiCss3 key={crypto.randomUUID()} />,
       <SiTypescript key={crypto.randomUUID()} />,
