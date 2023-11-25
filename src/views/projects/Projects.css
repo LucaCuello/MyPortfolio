@@ -1,0 +1,7 @@
+.projects-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-right: 20px;
+}

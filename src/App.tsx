@@ -3,11 +3,11 @@ import { AboutMeContainer } from "./components/aboutMeContainer/AboutMeContainer
 import { Footer } from "./components/footer/Footer";
 import { NavBar } from "./components/navBar/NavBar";
 import { ProfilePicture } from "./components/profilePicture/ProfilePicture";
-import { AboutMe } from "./routes/aboutMe/AboutMe";
-import { Education } from "./routes/education/Education";
-import { NotFound } from "./routes/notFound/NotFound";
-import { Projects } from "./routes/projects/Projects";
-import { Skills } from "./routes/skills/Skills";
+import { AboutMe } from "./views/about/AboutMe";
+import { Education } from "./views/education/Education";
+import { NotFound } from "./views/notFound/NotFound";
+import { Projects } from "./views/projects/Projects";
+import { Skills } from "./views/skills/Skills";
 
 export const App = () => {
   return (

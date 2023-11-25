@@ -3,6 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import CvEn from "../../assets/curriculum/CVFrontEN.pdf";
 import { Button } from "../../components/button/Button";
+import { NewButton } from "../../components/newButton/NewButton";
 import "./AboutMe.css";
 
 export const AboutMe = () => {
@@ -22,6 +23,8 @@ export const AboutMe = () => {
           icon={<HiOutlineDocumentText />}
           document={true}
         ></Button>
+        <NewButton variant="primary" content="Resume" />
+        <NewButton variant="secondary" content="Contact me" />
         <Button
           content="Contact me"
           direction="mailto:lucagcuello@gmail.com"

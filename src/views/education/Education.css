@@ -1,0 +1,43 @@
+.education-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.controllers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 5px;
+}
+
+.controllers button {
+  cursor: pointer;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--accent);
+  color: var(--dark-main);
+  font-size: var(--medium);
+  transition: all 150ms ease-in;
+}
+
+.controllers button:hover {
+  background-color: var(--accent-ligth);
+  transition: all 150ms ease-in;
+}
+
+.controllers button:disabled {
+  cursor: not-allowed;
+  background-color: var(--clear-white);
+}
