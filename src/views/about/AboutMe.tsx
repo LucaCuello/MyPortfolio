@@ -20,7 +20,7 @@ export const AboutMe = () => {
         <h2 className="subheading">Front-end developer</h2>
         <div className="buttons-container">
           <NewButton variant="primary" content="My resume" />
-          <NewButton variant="secondary" content="Contact me!" />
+          <NewButton variant="primary" content="Contact me!" />
         </div>
         <main className="aboutme-body">
           <p>

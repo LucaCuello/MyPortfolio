@@ -2,14 +2,15 @@
   cursor: pointer;
   position: relative;
   padding: 8px 25px;
-  border-radius: 20px;
+  border-radius: 5px;
   color: var(--neutral-100);
   background-color: transparent;
   overflow: hidden;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 14px;
   z-index: 1;
   transition: transform 300ms ease;
+  text-transform: uppercase;
 }
 
 .button::before {
@@ -50,7 +51,8 @@
 }
 
 .button-primary {
-  border: 2px solid var(--mint-100);
+  color: var(--mint-50);
+  border: 1px solid var(--mint-100);
 }
 
 .button-primary::before {
@@ -62,13 +64,16 @@
 }
 
 .button-secondary {
-  border: 2px solid var(--purple-100);
+  border: 1px solid var(--purple-100);
+  border: 1px solid #b00021;
 }
 
 .button-secondary::before {
   background-color: var(--purple-200);
+  background-color: #3f000a;
 }
 
 .button-secondary::after {
   background-color: var(--purple-300);
+  background-color: #290801;
 }

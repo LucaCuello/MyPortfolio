@@ -72,10 +72,11 @@ header {
 }
 
 .item-link {
+  font-family: "Cabin", sans-serif;
   color: var(--mint-50);
   font-size: var(--normal);
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
 }
