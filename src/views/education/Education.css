@@ -26,18 +26,18 @@
   border: none;
   border-radius: 5px;
   padding: 5px;
-  background-color: var(--accent);
-  color: var(--dark-main);
+  background-color: var(--mint-100);
+  color: var(--mint-400);
   font-size: var(--medium);
   transition: all 150ms ease-in;
 }
 
 .controllers button:hover {
-  background-color: var(--accent-ligth);
+  background-color: var(--mint-50);
   transition: all 150ms ease-in;
 }
 
 .controllers button:disabled {
   cursor: not-allowed;
-  background-color: var(--clear-white);
+  background-color: var(--mint-200);
 }

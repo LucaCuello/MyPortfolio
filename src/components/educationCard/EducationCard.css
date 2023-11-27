@@ -5,12 +5,12 @@
   width: 100%;
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid var(--clear-ligth);
+  border: 2px solid var(--mint-200);
   transition: all 200ms ease;
 }
 
 .study-card:hover {
-  border: 1px solid var(--accent-ligth);
+  border: 2px solid var(--mint-150);
   transition: all 200ms ease;
 }
 
@@ -19,29 +19,32 @@
 }
 
 .card-heading {
-  color: var(--accent-ligth);
+  font-family: "Cabin", sans-serif;
+  color: var(--mint-50);
   font-size: var(--sub-heading);
   font-weight: 700;
 }
 
 .card-subheading {
-  color: var(--accent-ligth);
+  font-family: "Cabin", sans-serif;
+  color: var(--mint-100);
   font-size: var(--medium);
   font-weight: 500;
 }
 
+.card-info {
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  color: var(--mint-150);
+}
 .head {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.card-info {
-  color: var(--ligth-main);
-}
-
 .card-description {
-  color: var(--clear-white);
+  color: var(--neutral-200);
 }
 
 .certificate-button {

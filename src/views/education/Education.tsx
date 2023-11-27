@@ -22,7 +22,7 @@ export const Education = () => {
         transition={{ duration: 0.3, layout: { duration: 0.2 } }}
         className="education-container"
       >
-        <h1 className="heading">My education</h1>
+        <h1 className="heading">Education</h1>
         <div className="cards-container">
           {slicedArray.map((props) => (
             <EducationCard {...props} key={crypto.randomUUID()} />

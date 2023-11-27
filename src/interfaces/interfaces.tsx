@@ -5,3 +5,10 @@ export interface ButtonProps {
   hasIcon?: boolean;
   icon?: React.ReactNode;
 }
+export interface CardProps {
+  title: string;
+  courseType: string;
+  description: string;
+  place: string;
+  date: string;
+}

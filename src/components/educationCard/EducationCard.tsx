@@ -1,17 +1,6 @@
 import { motion } from "framer-motion";
+import { CardProps } from "../../interfaces/interfaces";
 import "./EducationCard.css";
-import { EducationCardButton } from "./educationCardButton/EducationCardButton";
-
-type CardProps = {
-  title: string;
-  courseType: string;
-  description: string;
-  place: string;
-  date: string;
-  certificateLink: string;
-  certificateAvailible: boolean;
-  certificateImage: string;
-};
 
 export const EducationCard = ({
   title,
@@ -19,9 +8,6 @@ export const EducationCard = ({
   description,
   place,
   date,
-  certificateLink,
-  certificateAvailible,
-  certificateImage,
 }: CardProps) => {
   return (
     <motion.div
@@ -38,11 +24,6 @@ export const EducationCard = ({
         </span>
       </div>
       <p className="card-description">{description}</p>
-      {/* <EducationCardButton
-        certificateLink={certificateLink}
-        certificateAvailible={certificateAvailible}
-        certificateImage={certificateImage}
-      /> */}
     </motion.div>
   );
 };
