@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+import "./Navbar.css";
 
-export const NavBar = () => {
+export const Navbar = () => {
   const [activeClass, setActiveClass] = useState(false);
 
   useEffect(() => {
@@ -39,12 +39,14 @@ export const NavBar = () => {
       </div>
       <nav
         className={
-          activeClass ? "hamburguer-menu hamburguer-menu-shown" : "hamburguer-menu"
+          activeClass
+            ? "hamburguer-menu hamburguer-menu-shown"
+            : "hamburguer-menu"
         }
       >
         <ul className="un-list">
           <li className="item-list">
-            <NavLink to="/" className="item-link">
+            <NavLink to="/about" className="item-link">
               About me
             </NavLink>
           </li>
@@ -68,7 +70,7 @@ export const NavBar = () => {
       <nav className="desktop-menu">
         <ul className="un-list">
           <li className="item-list">
-            <NavLink to="/" className="item-link">
+            <NavLink to="/about" className="item-link">
               About me
             </NavLink>
           </li>

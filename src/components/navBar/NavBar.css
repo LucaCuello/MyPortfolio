@@ -14,7 +14,7 @@
   pointer-events: none;
   width: 80%;
   height: 3px;
-  background-color: var(--accent);
+  background-color: var(--mint-100);
   transition: all 300ms ease;
 }
 
@@ -33,8 +33,8 @@
 .hamburguer-menu {
   display: none;
   position: absolute;
-  background-color: var(--dark-main);
-  border: 2px solid var(--clear-ligth);
+  background-color: var(--mint-400);
+  border: 2px solid var(--mint-100);
   padding: 60px 20px 60px 20px;
   margin-top: 10px;
   border-radius: 10px;
@@ -72,7 +72,7 @@ header {
 }
 
 .item-link {
-  color: var(--ligth-main);
+  color: var(--mint-50);
   font-size: var(--normal);
   font-weight: 600;
   letter-spacing: 1px;
@@ -86,29 +86,24 @@ header {
   bottom: -4px;
   height: 2px;
   width: 40%;
-  background-color: var(--accent-ligth);
+  background-color: var(--mint-150);
   transition: all 200ms ease;
 }
 
 .item-link:hover {
-  color: var(--accent-ligth);
+  color: var(--mint-100);
   transition: all 150ms ease-in-out;
 }
 
 .item-link:hover::before {
-  background-color: var(--ligth-main);
   width: 100%;
   transition: all 200ms ease;
 }
 
 .active {
-  color: var(--accent-ligth);
+  color: var(--mint-100);
 }
 
 .active::before {
   width: 100%;
-}
-
-.active:hover::before {
-  background-color: var(--accent-ligth);
 }
