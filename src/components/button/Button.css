@@ -1,49 +1,82 @@
-.comp-button {
-  cursor: pointer;
+.button {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 5px;
-  outline: none;
-  border: none;
-  padding: 5px 12px;
+  cursor: pointer;
+  position: relative;
+  padding: 8px 25px;
   border-radius: 5px;
-  font-weight: 600;
-  background-color: var(--accent-ligth);
-  font-size: var(--normal);
+  color: var(--neutral-100);
+  background-color: transparent;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 14px;
+  z-index: 1;
+  transition: transform 300ms ease;
   text-transform: uppercase;
-  transition: all 400ms ease-in-out;
-  color: var(--dark-main);
 }
 
-.comp-button:nth-of-type(2) {
-  background-color: var(--ligth-main);
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 200ms ease-in-out;
 }
 
-.comp-button a {
-  color: var(--dark-main);
+.button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 200ms ease-in-out;
 }
 
-.comp-button:hover {
-  box-shadow: 5px 5px var(--accent);
-  transition: all 400ms ease-in-out;
-  transform: scale(1.02);
+.button:hover::before {
+  height: 100%;
+  transition: all 200ms ease-in-out;
 }
 
-.comp-button:nth-of-type(2):hover {
-  box-shadow: 5px 5px var(--clear-ligth);
+.button:hover::after {
+  height: 0%;
+  transition: all 200ms ease-in-out;
 }
 
-.comp-button:hover svg {
-  animation: movement 600ms ease-in-out;
+.button:hover {
+  transform: scale(1.05);
+  transition: transform 300ms ease;
 }
 
-@keyframes movement {
-  50% {
-    rotate: 20deg;
-  }
+.button-primary {
+  color: var(--mint-50);
+  border: 1px solid var(--mint-100);
+}
 
-  100% {
-    rotate: -20deg;
-  }
+.button-primary::before {
+  background-color: var(--mint-200);
+}
+
+.button-primary::after {
+  background-color: var(--mint-300);
+}
+
+.button-secondary {
+  border: 1px solid var(--purple-100);
+  border: 1px solid #b00021;
+}
+
+.button-secondary::before {
+  background-color: var(--purple-200);
+  background-color: #3f000a;
+}
+
+.button-secondary::after {
+  background-color: var(--purple-300);
+  background-color: #290801;
 }

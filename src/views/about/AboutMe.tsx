@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { NewButton } from "../../components/newButton/NewButton";
+import { Button } from "../../components/Button/Button";
 import "./AboutMe.css";
 
 export const AboutMe = () => {
@@ -19,8 +19,8 @@ export const AboutMe = () => {
         <h1 className="heading">Luca</h1>
         <h2 className="subheading">Front-end developer</h2>
         <div className="buttons-container">
-          <NewButton variant="primary" content="My resume" />
-          <NewButton variant="primary" content="Contact me!" />
+          <Button variant="primary" content="My resume" />
+          <Button variant="primary" content="Contact me!" />
         </div>
         <main className="aboutme-body">
           <p>
