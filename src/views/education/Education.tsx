@@ -24,8 +24,8 @@ export const Education = () => {
       >
         <h1 className="heading">Education</h1>
         <div className="cards-container">
-          {slicedArray.map((props) => (
-            <EducationCard {...props} key={crypto.randomUUID()} />
+          {slicedArray.map((props, index) => (
+            <EducationCard {...props} key={index} />
           ))}
         </div>
         <div className="controllers">
