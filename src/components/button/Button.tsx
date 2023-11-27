@@ -6,9 +6,10 @@ export const Button = ({
   content = "Button",
   hasIcon = false,
   icon,
+  size = "md",
 }: ButtonProps) => {
   return (
-    <button className={`button button-${variant}`}>
+    <button className={`button button-${variant} button-${size}`}>
       {hasIcon && icon}
       <span>{content}</span>
     </button>

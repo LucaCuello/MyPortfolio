@@ -16,6 +16,11 @@
   text-transform: uppercase;
 }
 
+.button-sm {
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
 .button::before {
   content: "";
   position: absolute;
