@@ -7,8 +7,22 @@ export const Button = ({
   hasIcon = false,
   icon,
   size = "md",
+  as = "button",
+  linkTo = "#",
+  target = "_blank",
 }: ButtonProps) => {
-  return (
+  const isLink = as === "link";
+
+  return isLink ? (
+    <a
+      href={linkTo}
+      className={`button button-${variant} button-${size}`}
+      target={target}
+    >
+      {hasIcon && icon}
+      <span>{content}</span>
+    </a>
+  ) : (
     <button className={`button button-${variant} button-${size}`}>
       {hasIcon && icon}
       <span>{content}</span>

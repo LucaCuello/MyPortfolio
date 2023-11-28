@@ -2,16 +2,16 @@
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  border: 1px solid var(--ligth-main);
+  border: 2px solid var(--mint-200);
   border-radius: 20px;
   width: 100%;
   padding: 20px;
-  transition: all 200ms ease;
+  transition: all 300ms ease;
 }
 
 .project:hover {
-  border: 1px solid var(--accent-ligth);
-  transition: all 200ms ease;
+  border: 2px solid var(--mint-150);
+  transition: all 300ms ease;
 }
 
 .project-preview {
@@ -31,7 +31,7 @@
 }
 
 .project-description p {
-  color: var(--clear-white);
+  color: var(--neutral-200);
   font-size: var(--normal);
   width: 50ch;
 }
@@ -45,7 +45,14 @@
 }
 
 .techs-used svg {
-  color: var(--ligth-main);
+  color: var(--mint-50);
+}
+
+.card-heading {
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--mint-100);
 }
 
 .go-to {
@@ -53,57 +60,4 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.btn {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  gap: 5px;
-  background-color: var(--accent-ligth);
-  color: var(--dark-main);
-  font-size: var(--small);
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: all 150ms ease;
-}
-
-.btn:hover {
-  transform: scale(1.02);
-  transition: all 150ms ease;
-}
-
-.deploy-btn svg {
-  transform: rotate(0);
-  transition: transform 200ms ease;
-}
-
-.deploy-btn:hover svg {
-  transform: rotate(40deg);
-  transition: transform 200ms ease;
-}
-
-.repository-btn {
-  background-color: var(--ligth-main);
-}
-
-.deploy-btn:hover {
-  box-shadow: 5px 5px var(--accent-dark);
-}
-
-.repository-btn:hover {
-  box-shadow: 5px 5px var(--clear-ligth);
-}
-
-.repository-btn svg {
-  transition: transform 200ms ease;
-}
-
-.repository-btn:hover svg {
-  transform: rotate(10deg);
-  transition: transform 200ms ease;
 }

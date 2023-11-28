@@ -5,6 +5,9 @@ export interface ButtonProps {
   size?: "sm" | "md";
   hasIcon?: boolean;
   icon?: React.ReactNode;
+  as?: "button" | "link";
+  linkTo?: string;
+  target?: "_blank" | "_self";
 }
 export interface CardProps {
   title: string;
@@ -12,4 +15,12 @@ export interface CardProps {
   description: string;
   place: string;
   date: string;
+}
+export interface projectCardProps {
+  title: string;
+  description: string;
+  icons: React.ReactNode;
+  imagePath: string;
+  deploy: string;
+  repository: string;
 }

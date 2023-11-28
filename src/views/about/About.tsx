@@ -20,7 +20,13 @@ export const About = () => {
         <h2 className="subheading">Front-end developer</h2>
         <div className="buttons-container">
           <Button variant="primary" content="My resume" />
-          <Button variant="primary" content="Contact me!" />
+          <Button
+            variant="primary"
+            content="Contact me!"
+            as="link"
+            linkTo="mailto:lucagcuello@gmail.com"
+            target="_self"
+          />
         </div>
         <main className="aboutme-body">
           <p>
