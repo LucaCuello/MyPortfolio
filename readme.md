@@ -1,11 +1,13 @@
-# Portfolio
+# My portfolio
 
-## About
+## About Me
 
-This website was built using React and TypeScript to showcase my projects as a front-end developer. I aimed to create a modern and accessible experience for all users. Here you will find a selection of my projects, including information about the technologies and methods used to create them. I hope you enjoy exploring my portfolio and learning more about my skills and experience. If you have any questions or comments, please don't hesitate to reach out.
+Welcome to my digital space, where you can explore my journey as a Front-End Developer. This website, developed with React and TypeScript, reflects my passion for creating modern, accessible, and user-friendly interfaces. Here, you'll find a showcase of my recent projects, each detailed with the technologies employed during their development.
 
-[🔸Deploy](https://lucacuello.vercel.app/).
+I hope this visit provides you with a clear insight into my skills and experience in the realm of web development. Feel free to explore each project and discover how I approach programming and design challenges.
 
-<img src="https://iili.io/Hlvn0zu.png" border="0">
+For any inquiries, comments, or collaboration proposals, do not hesitate to reach out. Your feedback is always welcome and valued.
 
-Avatar made by [Franco](https://www.instagram.com/xfrvnx/).
+Enjoy your journey through my portfolio!
+
+[🔸Visit My Website](https://lucacuello.site).

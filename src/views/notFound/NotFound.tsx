@@ -13,7 +13,7 @@ export const NotFound = () => {
       setSeconds((seconds) => seconds - 1);
     }, oneSecond);
     const timeout = setTimeout(() => {
-      navigateTo("/home", { replace: true });
+      navigateTo("/about", { replace: true });
     }, oneSecond * 4);
     return () => {
       clearTimeout(timeout);
