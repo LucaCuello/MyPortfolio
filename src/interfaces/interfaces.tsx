@@ -8,6 +8,7 @@ export interface ButtonProps {
   as?: "button" | "link";
   linkTo?: string;
   target?: "_blank" | "_self";
+  isCV?: boolean;
 }
 export interface CardProps {
   title: string;

@@ -45,8 +45,8 @@ export const programmingLanguagesData = [
     ligthColor: "var(--mint-150)",
   },
   {
-    icon: [<SiJava key={crypto.randomUUID()} />],
-    name: "Java",
+    icon: [<SiPython key={crypto.randomUUID()} />],
+    name: "Python",
     mainColor: "var(--mint-100)",
     ligthColor: "var(--mint-150)",
   },
@@ -54,12 +54,6 @@ export const programmingLanguagesData = [
     icon: [<SiCplusplus key={crypto.randomUUID()} />],
     name: "C++",
     mainColor: "var(--mint-50)",
-    ligthColor: "var(--mint-150)",
-  },
-  {
-    icon: [<SiPython key={crypto.randomUUID()} />],
-    name: "Python",
-    mainColor: "var(--mint-100)",
     ligthColor: "var(--mint-150)",
   },
 ];

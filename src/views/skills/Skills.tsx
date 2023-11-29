@@ -17,7 +17,7 @@ export const Skills = () => {
       transition={{ duration: 0.3 }}
       className="skills-container"
     >
-      <h1 className="heading">My skills tree</h1>
+      <h1 className="heading">Skills</h1>
       <div className="skills-card-container">
         <div className="programming-languages">
           <h2 className="category-heading">Programming languages</h2>

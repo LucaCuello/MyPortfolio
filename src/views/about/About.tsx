@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import CV from "../../assets/curriculum/LucaCuelloCV2023ENG.pdf";
 import { Button } from "../../components/Button/Button";
 import "./About.css";
 
@@ -19,7 +20,14 @@ export const About = () => {
         <h1 className="heading">Luca</h1>
         <h2 className="subheading">Front-end developer</h2>
         <div className="buttons-container">
-          <Button variant="primary" content="My resume" />
+          <Button
+            variant="primary"
+            content="My resume"
+            as="link"
+            target="_self"
+            isCV
+            linkTo={CV}
+          />
           <Button
             variant="primary"
             content="Contact me!"
