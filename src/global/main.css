@@ -15,7 +15,12 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: var(--mint-400);
+  background: linear-gradient(
+    24deg,
+    rgba(1, 23, 34, 1) 44%,
+    rgba(0, 63, 53, 1) 91%
+  );
+  min-height: 100vh;
 }
 
 html {

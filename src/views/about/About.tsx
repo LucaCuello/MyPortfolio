@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Avatar from "../../assets/avatar/avatar.png";
 import CV from "../../assets/curriculum/LucaCuelloCV2023ENG.pdf";
 import { Button } from "../../components/Button/Button";
 import "./About.css";
@@ -59,7 +60,7 @@ export const About = () => {
         transition={{ duration: 0.4 }}
         className="picture-container"
       >
-        {/* Acá iría mi foto */}
+        <img src={Avatar} alt="Picture of myself" />
       </motion.div>
     </motion.div>
   );

@@ -62,17 +62,19 @@
   width: 250px;
   height: auto;
   transform: translateY(30px) scale(1);
-  transition: all 400ms ease;
+  transition: all 250ms ease;
+  filter: grayscale(80%) brightness(55%) hue-rotate(120deg);
 }
 
 .picture-container:hover {
   box-shadow: inset 0px -40px var(--mint-150);
   border: 2px solid var(--mint-150);
-  transition: all 300ms ease;
+  transition: all 250ms ease;
 }
 
 .picture-container:hover img {
   filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.445));
   transform: translateY(20px) scale(1.02);
-  transition: all 400ms ease;
+  transition: all 250ms ease;
+  filter: grayscale(75%) brightness(60%) hue-rotate(125deg);
 }
