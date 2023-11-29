@@ -6,20 +6,25 @@ export const Footer = () => {
     <footer>
       <div className="contact-me">
         <span>
-          <a className="contact-link" href="https://www.linkedin.com/in/luca-cuello41/" target="_blank">
-            <FaLinkedin />
-            Contact me on Linkedin
+          <a
+            className="contact-link"
+            href="https://www.linkedin.com/in/luca-cuello41/"
+            target="_blank"
+          >
+            <FaLinkedin className="linkedin-icon" />
+            Linkedin
           </a>
         </span>
         <span>
-          <a className="contact-link" href="https://github.com/LucaCuello" target="_blank">
-            <FaGithubSquare />
-            Follow me on Github
+          <a
+            className="contact-link"
+            href="https://github.com/LucaCuello"
+            target="_blank"
+          >
+            <FaGithubSquare className="github-icon" />
+            Github
           </a>
         </span>
-      </div>
-      <div className="update-info">
-        <p>Last update: 15/10/2023</p>
       </div>
     </footer>
   );

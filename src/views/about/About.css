@@ -1,0 +1,80 @@
+.aboutme-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.heading {
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: var(--main-heading);
+  color: var(--mint-50);
+}
+
+.subheading {
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: var(--sub-heading);
+  color: var(--mint-100);
+  margin-bottom: 10px;
+}
+
+.aboutme-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--neutral-200);
+  font-size: var(--normal);
+  text-align: left;
+  line-height: 25px;
+  word-spacing: 6px;
+  font-weight: 500;
+  width: 60ch;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset 0px -15px var(--mint-100);
+  border: 2px solid var(--mint-100);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='300' height='300' preserveAspectRatio='none' viewBox='0 0 300 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1094%26quot%3b)' fill='none'%3e%3cpath d='M84.827%2c88.53C103.214%2c87.272%2c116.776%2c73.148%2c125.65%2c56.995C134.128%2c41.561%2c138.211%2c22.935%2c129.158%2c7.831C120.303%2c-6.942%2c102.048%2c-10.788%2c84.827%2c-11.113C66.838%2c-11.453%2c47.774%2c-8.667%2c37.498%2c6.101C25.783%2c22.936%2c22.812%2c45.547%2c33.024%2c63.334C43.271%2c81.181%2c64.295%2c89.935%2c84.827%2c88.53' fill='rgba(0%2c 176%2c 143%2c 0.80)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M225.895%2c419.414C258.809%2c418.897%2c286.529%2c395.181%2c300.533%2c365.39C312.718%2c339.47%2c303.552%2c310.522%2c288.554%2c286.122C274.425%2c263.135%2c252.868%2c244.659%2c225.895%2c243.961C197.773%2c243.234%2c172.463%2c258.996%2c157.359%2c282.729C140.922%2c308.556%2c133.361%2c340.434%2c147.083%2c367.8C162.169%2c397.888%2c192.241%2c419.943%2c225.895%2c419.414' fill='rgba(0%2c 176%2c 143%2c 0.80)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M170.984%2c272.891C194.79%2c270.845%2c215.04%2c258.199%2c228.193%2c238.251C243.157%2c215.557%2c256.06%2c187.483%2c243.033%2c163.624C229.661%2c139.133%2c198.888%2c133.579%2c170.984%2c133.474C142.843%2c133.369%2c113.556%2c139.634%2c97.993%2c163.08C80.838%2c188.924%2c76.593%2c223.97%2c93.765%2c249.804C109.704%2c273.784%2c142.296%2c275.356%2c170.984%2c272.891' fill='rgba(0%2c 176%2c 143%2c 0.80)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M322.117%2c267.605C347.654%2c267.654%2c375.766%2c264.137%2c388.955%2c242.27C402.452%2c219.892%2c394.921%2c191.813%2c381.271%2c169.528C368.312%2c148.372%2c346.927%2c133.255%2c322.117%2c133.152C297.137%2c133.048%2c275.114%2c147.707%2c262.107%2c169.034C248.48%2c191.378%2c242.114%2c219.657%2c255.724%2c242.012C268.943%2c263.726%2c296.696%2c267.556%2c322.117%2c267.605' fill='rgba(0%2c 176%2c 143%2c 0.80)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M30.948%2c309.73C45.067%2c309.657%2c58.751%2c303.778%2c66.141%2c291.748C73.881%2c279.149%2c74.839%2c263.164%2c67.408%2c250.38C60.012%2c237.657%2c45.662%2c230.93%2c30.948%2c231.208C16.72%2c231.477%2c4.012%2c239.447%2c-3.203%2c251.713C-10.528%2c264.165%2c-12.207%2c279.665%2c-4.878%2c292.115C2.357%2c304.407%2c16.685%2c309.804%2c30.948%2c309.73' fill='rgba(0%2c 176%2c 143%2c 0.90)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M69.332%2c393.687C100.303%2c395.851%2c135.382%2c391.404%2c151.264%2c364.728C167.38%2c337.66%2c155.331%2c304.121%2c138.52%2c277.48C123.03%2c252.933%2c98.351%2c235.527%2c69.332%2c234.889C39.172%2c234.226%2c8.938%2c247.739%2c-5.335%2c274.316C-19.005%2c299.772%2c-10.234%2c330.019%2c5.089%2c354.516C19.345%2c377.307%2c42.515%2c391.813%2c69.332%2c393.687' fill='rgba(0%2c 176%2c 143%2c 0.60)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M116.067%2c174.702C146.158%2c172.865%2c168.008%2c148.43%2c181.569%2c121.505C193.645%2c97.529%2c193.256%2c70.099%2c180.705%2c46.368C167.186%2c20.806%2c144.947%2c-0.888%2c116.067%2c-2.347C84.835%2c-3.925%2c55.314%2c12.513%2c39.031%2c39.211C22.042%2c67.066%2c18.948%2c102.086%2c35.074%2c130.449C51.371%2c159.113%2c83.155%2c176.711%2c116.067%2c174.702' fill='rgba(0%2c 176%2c 143%2c 0.20)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M276.477%2c261.608C303.811%2c260.234%2c329.342%2c248.802%2c344.214%2c225.827C360.591%2c200.528%2c367.907%2c168.703%2c353.884%2c142.027C338.995%2c113.702%2c308.411%2c94.908%2c276.477%2c96.964C247.191%2c98.85%2c229.548%2c125.739%2c214.604%2c150.996C199.247%2c176.95%2c181.093%2c206.969%2c195.815%2c233.288C210.725%2c259.943%2c245.974%2c263.142%2c276.477%2c261.608' fill='rgba(0%2c 176%2c 143%2c 0.40)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1094'%3e%3crect width='300' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  transition: all 300ms ease-in-out;
+}
+
+.picture-container img {
+  width: 250px;
+  height: auto;
+  transform: translateY(30px) scale(1);
+  transition: all 250ms ease;
+  filter: grayscale(80%) brightness(55%) hue-rotate(120deg);
+}
+
+.picture-container:hover {
+  box-shadow: inset 0px -40px var(--mint-150);
+  border: 2px solid var(--mint-150);
+  transition: all 250ms ease;
+}
+
+.picture-container:hover img {
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.445));
+  transform: translateY(20px) scale(1.02);
+  transition: all 250ms ease;
+  filter: grayscale(75%) brightness(60%) hue-rotate(125deg);
+}

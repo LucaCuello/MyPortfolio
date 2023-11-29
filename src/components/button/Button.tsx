@@ -1,49 +1,35 @@
-import ButtonMui from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
-import { styled } from "@mui/material/styles";
+import { Dialog, DialogActions, DialogContent } from "@mui/material";
+import { saveAs } from "file-saver";
 import { useState } from "react";
+import { ButtonProps } from "../../interfaces/interfaces";
+import {
+  CustomButtonMui,
+  CustomDialogContentText,
+  CustomDialogTitle,
+  dialogProps,
+} from "../utils/utils";
 import "./Button.css";
 
-type ButtonProps = {
-  content: string;
-  direction: string;
-  icon: React.ReactNode;
-  document: boolean;
-};
-
-const CustomDialogTitle = styled(DialogTitle)`
-  font-family: "Raleway", sans-serif;
-  color: var(--clear-white);
-  font-weight: 700;
-`;
-
-const CustomDialogContentText = styled(DialogContentText)`
-  font-family: "Raleway", sans-serif;
-  color: var(--clear-white);
-  font-weight: 400;
-`;
-
-const CustomButtonMui = styled(ButtonMui)`
-  font-family: "Raleway", sans-serif;
-  color: var(--accent-ligth);
-  font-weight: 700;
-  :hover {
-    color: var(--dark-main);
-    background-color: var(--accent-ligth);
-  }
-`;
-
-const dialogProps = {
-  backgroundColor: "var(--dark-main)",
-  borderRadius: "15px",
-};
-
-export const Button = ({ content, direction, icon, document }: ButtonProps) => {
+export const Button = ({
+  variant,
+  content = "Button",
+  hasIcon = false,
+  icon,
+  size = "md",
+  as = "button",
+  linkTo = "#",
+  target = "_blank",
+  isCV = false,
+}: ButtonProps) => {
   const [open, setOpen] = useState(false);
+  const isLink = as === "link";
+
+  const handleDownload = () => {
+    handleClose();
+    if (isCV) {
+      saveAs(linkTo, "LucaCuelloCV2023ENG.pdf");
+    }
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -53,21 +39,8 @@ export const Button = ({ content, direction, icon, document }: ButtonProps) => {
     setOpen(false);
   };
 
-  const handdleDownload = () => {
-    window.open(direction, "_blank");
-  };
-
-  return (
+  return isLink ? (
     <>
-      <button
-        className="comp-button"
-        onClick={() => {
-          document ? handleClickOpen() : null;
-        }}
-      >
-        {icon}
-        {document ? content : <a href={direction}>{content}</a>}
-      </button>
       <Dialog
         PaperProps={{ style: dialogProps }}
         open={open}
@@ -76,27 +49,32 @@ export const Button = ({ content, direction, icon, document }: ButtonProps) => {
         aria-describedby="alert-dialog-description"
       >
         <CustomDialogTitle id="alert-dialog-title">
-          {"Before you go"}
+          Download Rresume
         </CustomDialogTitle>
         <DialogContent style={{ color: "var(--clear-white)" }}>
           <CustomDialogContentText id="alert-dialog-description">
-            A new browser tab with my personal resume (.PDF) is about to open. Do you
-            want to procede?
+            Do you want to download my resume in PDF format?
           </CustomDialogContentText>
         </DialogContent>
         <DialogActions>
-          <CustomButtonMui onClick={handleClose}>No, thanks</CustomButtonMui>
-          <CustomButtonMui
-            onClick={() => {
-              handleClose();
-              handdleDownload();
-            }}
-            autoFocus
-          >
-            Yes!
-          </CustomButtonMui>
+          <CustomButtonMui onClick={handleClose}>Cancel</CustomButtonMui>
+          <CustomButtonMui onClick={handleDownload}>Download</CustomButtonMui>
         </DialogActions>
-      </Dialog>{" "}
+      </Dialog>
+      <a
+        className={`button button-${variant} button-${size}`}
+        href={isCV ? "#" : linkTo}
+        target={target}
+        onClick={isCV ? handleClickOpen : undefined}
+      >
+        {hasIcon && icon}
+        <span>{content}</span>
+      </a>
     </>
+  ) : (
+    <button className={`button button-${variant} button-${size}`}>
+      {hasIcon && icon}
+      <span>{content}</span>
+    </button>
   );
 };

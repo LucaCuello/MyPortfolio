@@ -1,17 +1,8 @@
 import { motion } from "framer-motion";
-import { FiGithub } from "react-icons/fi";
-import { GrDeploy } from "react-icons/gr";
-
+import { IoLogoGithub, IoLogoVercel } from "react-icons/io5";
+import { projectCardProps } from "../../interfaces/interfaces";
+import { Button } from "../Button/Button";
 import "./ProjectsCard.css";
-
-type CardProps = {
-  title: string;
-  description: string;
-  icons: React.ReactNode;
-  imagePath: string;
-  deploy: string;
-  repository: string;
-};
 
 export const ProjectsCard = ({
   title,
@@ -20,14 +11,13 @@ export const ProjectsCard = ({
   imagePath,
   deploy,
   repository,
-}: CardProps) => {
+}: projectCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.1 }}
       className="project"
-      key={crypto.randomUUID()}
     >
       <motion.img
         initial={{ opacity: 0 }}
@@ -45,14 +35,24 @@ export const ProjectsCard = ({
         <p>{description}</p>
         <span className="techs-used">{icons}</span>
         <div className="go-to">
-          <a className="deploy-btn btn" href={deploy} target="_blank">
-            <GrDeploy />
-            Deploy
-          </a>
-          <a className="repository-btn btn" href={repository} target="_blank">
-            <FiGithub />
-            Repository
-          </a>
+          <Button
+            variant="primary"
+            content="Deploy"
+            size="sm"
+            hasIcon
+            icon={<IoLogoVercel />}
+            as="link"
+            linkTo={deploy}
+          />
+          <Button
+            variant="primary"
+            content="Repository"
+            size="sm"
+            hasIcon
+            icon={<IoLogoGithub />}
+            as="link"
+            linkTo={repository}
+          />
         </div>
       </div>
     </motion.div>

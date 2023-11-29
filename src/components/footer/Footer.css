@@ -2,11 +2,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-self: center;
-  gap: 10px;
   width: 80%;
-  border-top: 1px solid #ec9a9a56;
+  border-top: 1px solid var(--mint-150);
   padding-top: 25px;
-  color: var(--accent);
   font-size: var(--small);
   font-weight: 400;
 }
@@ -15,8 +13,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  color: var(--clear-ligth);
+  gap: 20px;
   align-self: center;
 }
 
@@ -24,20 +21,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  color: var(--clear-ligth);
+  gap: 4px;
+  color: var(--mint-100);
   transition: color 200ms ease-in;
 }
 
 .contact-link:hover {
-  color: var(--ligth-main);
+  color: var(--mint-150);
   transition: color 200ms ease-in;
 }
 
-.update-info {
-  align-self: center;
-}
-
-.update-info p {
-  color: var(--accent-ligth);
+.linkedin-icon,
+.github-icon {
+  color: var(--mint-50);
 }
