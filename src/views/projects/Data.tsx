@@ -13,7 +13,6 @@ import {
 import DolarLive from "../../assets/previews/DolarLive.png";
 import FullioStudioPreview from "../../assets/previews/FullioStudio.png";
 import GalaxyStore from "../../assets/previews/GalaxyStore.png";
-import PortfolioPrwview from "../../assets/previews/PortfolioPreview.png";
 import RetroToDoPreview from "../../assets/previews/RetroToDo.png";
 import SpookyShopPreview from "../../assets/previews/SpookyShop.png";
 
@@ -91,21 +90,5 @@ export const projectsData = [
     imagePath: SpookyShopPreview,
     repository: "https://github.com/LucaCuello/SpookyShop-Ecommerce",
     deploy: "https://spookyshop.vercel.app/",
-  },
-
-  {
-    title: "Portfolio",
-    description:
-      "My personal portfolio, showcasing various front-end projects. Built with React, Vite, and TypeScript, it includes React Router V6 for smooth single-page navigation and Framer Motion for animation effects.",
-    icons: [
-      <SiCss3 key={crypto.randomUUID()} />,
-      <SiTypescript key={crypto.randomUUID()} />,
-      <SiReact key={crypto.randomUUID()} />,
-      <SiVite key={crypto.randomUUID()} />,
-      <SiFramer key={crypto.randomUUID()} />,
-    ],
-    imagePath: PortfolioPrwview,
-    repository: "https://github.com/LucaCuello/MyPortfolio",
-    deploy: "https://lucacuello.vercel.app/",
   },
 ];
